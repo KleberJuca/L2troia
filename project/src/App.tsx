@@ -18,7 +18,7 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen bg-gray-900 text-white" style={{
-
+          cursor: "url('/L2-Cursor.cur'), auto", // Define o cursor personalizado
           backgroundImage: "url('/images/l2-header-baium.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",

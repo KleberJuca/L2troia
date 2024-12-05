@@ -37,6 +37,9 @@ Button {
     padding: 12;
     margin-bottom: 8;
 }
+.custom-cursor {
+    cursor: url('/L2-Cursor.cur'), auto; /* Define o cursor personalizado */
+}
 
 TabView {
     tab-text-color: #64748b;
