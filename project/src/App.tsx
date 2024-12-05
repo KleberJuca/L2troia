@@ -6,6 +6,10 @@ import Rankings from './pages/Rankings';
 import Support from './pages/Support';
 import History from './pages/History';
 import Wiki from './pages/Wiki';
+import Login from './pages/Auth/Login';
+import Register from './pages/Auth/Register';
+import Dashboard from './pages/Dashboard/Dashboard';
+import Donation from './pages/Dashboard/Donation';
 import Footer from './components/Footer';
 import React from 'react';
 
@@ -29,6 +33,11 @@ function App() {
             <Route path="/support" element={<Support />} />
             <Route path="/history" element={<History />} />
             <Route path="/wiki" element={<Wiki />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/dashboard" element={<Dashboard />}>
+              <Route path="donation" element={<Donation />} />
+            </Route>
           </Routes>
         </main>
         <Footer />

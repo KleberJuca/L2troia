@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowDownTrayIcon, UsersIcon, ChartBarIcon } from '@heroicons/react/24/outline';
+import React from 'react';
+
 
 export default function Home() {
   return (
