@@ -1,0 +1,9 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd">
+    <ActionBar class="bg-blue-800">
+        <GridLayout columns="auto, *, auto" class="w-full">
+            <Image src="~/images/logo.png" class="h-12 w-12" col="0" />
+            <Label text="L2 Troia" class="text-white text-xl font-bold" col="1" />
+            <Button text="Menu" class="text-white" col="2" />
+        </GridLayout>
+    </ActionBar>
+</Page>

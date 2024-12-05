@@ -1,0 +1,32 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ScrollView>
+        <StackLayout class="p-4">
+            <Label text="Downloads" class="text-2xl font-bold mb-4" />
+            
+            <!-- Client Download -->
+            <StackLayout class="bg-white p-4 rounded-lg mb-4">
+                <Label text="Cliente Completo" class="text-xl font-bold" />
+                <Label text="Tamanho: 4.2 GB" class="text-gray-600" />
+                <Progress value="{{ downloadProgress }}" maxValue="100" class="m-2" />
+                <Button text="DOWNLOAD" tap="{{ onDownloadClient }}" class="bg-blue-600 text-white" />
+            </StackLayout>
+
+            <!-- Patch Download -->
+            <StackLayout class="bg-white p-4 rounded-lg mb-4">
+                <Label text="Patch Atualizado" class="text-xl font-bold" />
+                <Label text="Versão: {{ currentPatchVersion }}" class="text-gray-600" />
+                <Button text="DOWNLOAD PATCH" tap="{{ onDownloadPatch }}" class="bg-green-600 text-white" />
+            </StackLayout>
+
+            <!-- System Requirements -->
+            <StackLayout class="bg-white p-4 rounded-lg">
+                <Label text="Requisitos Mínimos" class="text-xl font-bold mb-2" />
+                <Label text="• Windows 7/8/10/11" class="text-gray-700" />
+                <Label text="• Processador 2.0 GHz" class="text-gray-700" />
+                <Label text="• 2 GB RAM" class="text-gray-700" />
+                <Label text="• 5 GB Espaço em Disco" class="text-gray-700" />
+                <Label text="• DirectX 9.0c" class="text-gray-700" />
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</Page>

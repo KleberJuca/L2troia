@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.feature-card {
+    background-color: white;
+    border-radius: 8;
+    padding: 16;
+    margin: 4;
+    @apply shadow-lg;
+}
+
+ActionBar {
+    background-color: #1e40af;
+    color: white;
+}
+
+.list-group {
+    separator-color: transparent;
+}
+
+Button {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12 16;
+    border-radius: 8;
+}
+
+.bg-gradient {
+    background: linear-gradient(to bottom, #1e40af, #1e3a8a);
+}
+
+.input {
+    border-width: 1;
+    border-color: #e2e8f0;
+    border-radius: 8;
+    padding: 12;
+    margin-bottom: 8;
+}
+
+TabView {
+    tab-text-color: #64748b;
+    selected-tab-text-color: #1e40af;
+    tab-background-color: white;
+    android-selected-tab-highlight-color: #1e40af;
+}
+
+Progress {
+    color: #2563eb;
+    background-color: #e2e8f0;
+}

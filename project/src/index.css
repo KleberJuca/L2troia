@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-gray-900 text-white;
+  
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition font-semibold;
+  }
+}

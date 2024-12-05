@@ -1,0 +1,36 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ScrollView>
+        <StackLayout class="p-4">
+            <Label text="Suporte" class="text-2xl font-bold mb-4" />
+            
+            <!-- Discord Section -->
+            <StackLayout class="bg-white p-4 rounded-lg mb-4">
+                <Label text="Discord" class="text-xl font-bold" />
+                <Label text="Entre em nosso servidor Discord" class="text-gray-600" />
+                <Button text="ENTRAR NO DISCORD" tap="{{ onJoinDiscord }}" class="bg-indigo-600 text-white" />
+            </StackLayout>
+
+            <!-- Contact Form -->
+            <StackLayout class="bg-white p-4 rounded-lg">
+                <Label text="Contato" class="text-xl font-bold mb-2" />
+                <TextField hint="Seu nome" text="{{ userName }}" class="input" />
+                <TextField hint="Email" text="{{ userEmail }}" class="input" />
+                <TextView hint="Sua mensagem" text="{{ userMessage }}" class="input h-32" />
+                <Button text="ENVIAR" tap="{{ onSubmitSupport }}" class="bg-green-600 text-white mt-2" />
+            </StackLayout>
+
+            <!-- FAQ -->
+            <StackLayout class="mt-4">
+                <Label text="Perguntas Frequentes" class="text-xl font-bold mb-2" />
+                <ListView items="{{ faqItems }}" class="list-group">
+                    <ListView.itemTemplate>
+                        <StackLayout class="bg-white p-4 rounded-lg mb-2">
+                            <Label text="{{ question }}" class="font-bold" />
+                            <Label text="{{ answer }}" textWrap="true" class="text-gray-600 mt-2" />
+                        </StackLayout>
+                    </ListView.itemTemplate>
+                </ListView>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</Page>

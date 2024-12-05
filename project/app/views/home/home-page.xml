@@ -1,0 +1,62 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ScrollView>
+        <StackLayout class="p-4">
+            <!-- Hero Section -->
+            <StackLayout class="bg-blue-900 p-6 rounded-lg">
+                <Label text="Bem-vindo ao L2 Troia" class="text-3xl font-bold text-white text-center" />
+                <Label text="O melhor servidor de Lineage 2" class="text-lg text-gray-300 text-center mt-2" />
+                <Button text="JOGAR AGORA" class="bg-yellow-500 text-white font-bold py-4 px-8 rounded-full mt-4" tap="{{ onPlayNow }}" />
+            </StackLayout>
+
+            <!-- Server Stats -->
+            <GridLayout rows="auto" columns="*, *, *" class="mt-6 bg-white rounded-lg p-4">
+                <StackLayout col="0" class="text-center">
+                    <Label text="{{ onlinePlayers }}" class="text-2xl font-bold text-blue-800" />
+                    <Label text="Online" class="text-gray-600" />
+                </StackLayout>
+                <StackLayout col="1" class="text-center">
+                    <Label text="{{ serverRate }}" class="text-2xl font-bold text-blue-800" />
+                    <Label text="Rate" class="text-gray-600" />
+                </StackLayout>
+                <StackLayout col="2" class="text-center">
+                    <Label text="{{ serverUptime }}" class="text-2xl font-bold text-blue-800" />
+                    <Label text="Uptime" class="text-gray-600" />
+                </StackLayout>
+            </GridLayout>
+
+            <!-- News Section -->
+            <StackLayout class="mt-6">
+                <Label text="Últimas Notícias" class="text-2xl font-bold mb-4" />
+                <ListView items="{{ news }}" class="list-group">
+                    <ListView.itemTemplate>
+                        <StackLayout class="bg-white p-4 rounded-lg mb-2">
+                            <Label text="{{ title }}" class="font-bold text-lg" />
+                            <Label text="{{ date }}" class="text-gray-500" />
+                            <Label text="{{ description }}" textWrap="true" class="mt-2" />
+                        </StackLayout>
+                    </ListView.itemTemplate>
+                </ListView>
+            </StackLayout>
+
+            <!-- Features -->
+            <GridLayout rows="auto, auto" columns="*, *" class="mt-6">
+                <StackLayout col="0" row="0" class="feature-card">
+                    <Label text="Chronicle" class="text-lg font-bold" />
+                    <Label text="Interlude" class="text-gray-600" />
+                </StackLayout>
+                <StackLayout col="1" row="0" class="feature-card">
+                    <Label text="Exp Rate" class="text-lg font-bold" />
+                    <Label text="100x" class="text-gray-600" />
+                </StackLayout>
+                <StackLayout col="0" row="1" class="feature-card">
+                    <Label text="Drop Rate" class="text-lg font-bold" />
+                    <Label text="50x" class="text-gray-600" />
+                </StackLayout>
+                <StackLayout col="1" row="1" class="feature-card">
+                    <Label text="Adena Rate" class="text-lg font-bold" />
+                    <Label text="1000x" class="text-gray-600" />
+                </StackLayout>
+            </GridLayout>
+        </StackLayout>
+    </ScrollView>
+</Page>

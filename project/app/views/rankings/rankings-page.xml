@@ -1,0 +1,27 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ScrollView>
+        <StackLayout class="p-4">
+            <Label text="Rankings" class="text-2xl font-bold mb-4" />
+            
+            <!-- Ranking Categories -->
+            <GridLayout columns="*, *" rows="auto" class="mb-4">
+                <Button text="PvP" tap="{{ onPvPRanking }}" class="m-1" col="0" />
+                <Button text="PK" tap="{{ onPKRanking }}" class="m-1" col="1" />
+            </GridLayout>
+
+            <!-- Rankings List -->
+            <ListView items="{{ rankings }}" class="list-group">
+                <ListView.itemTemplate>
+                    <GridLayout columns="auto, *, auto" class="bg-white p-4 rounded-lg mb-2">
+                        <Label text="{{ position }}" class="font-bold text-2xl text-blue-600" col="0" />
+                        <StackLayout col="1" class="ml-4">
+                            <Label text="{{ characterName }}" class="font-bold" />
+                            <Label text="{{ className }}" class="text-gray-600" />
+                        </StackLayout>
+                        <Label text="{{ score }}" class="font-bold text-lg" col="2" />
+                    </GridLayout>
+                </ListView.itemTemplate>
+            </ListView>
+        </StackLayout>
+    </ScrollView>
+</Page>

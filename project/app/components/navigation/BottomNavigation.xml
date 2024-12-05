@@ -1,0 +1,14 @@
+<TabView androidTabsPosition="bottom" selectedIndexChanged="onTabChange">
+    <TabViewItem title="Home" iconSource="font://&#xf015;" className="fas">
+        <Frame defaultPage="~/views/home/home-page" />
+    </TabViewItem>
+    <TabViewItem title="Downloads" iconSource="font://&#xf019;" className="fas">
+        <Frame defaultPage="~/views/downloads/downloads-page" />
+    </TabViewItem>
+    <TabViewItem title="Rankings" iconSource="font://&#xf521;" className="fas">
+        <Frame defaultPage="~/views/rankings/rankings-page" />
+    </TabViewItem>
+    <TabViewItem title="Support" iconSource="font://&#xf086;" className="fas">
+        <Frame defaultPage="~/views/support/support-page" />
+    </TabViewItem>
+</TabView>
