@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import { NewsItem } from '../../types/news';
-import { CKEditor } from '@ckeditor/ckeditor5-react';
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import { Editor } from '@tinymce/tinymce-react';
 import React from 'react';
 
 interface NewsModalProps {
@@ -65,19 +64,28 @@ export default function NewsModal({ news, onSave, onClose }: NewsModalProps) {
 
           <div>
             <label className="block text-sm font-medium mb-1 text-white">Content</label>
-            <CKEditor
-              editor={ClassicEditor}
-              data={formData.content}
-              onChange={(event, editor) => {
-                const content = editor.getData();
-                setFormData({ ...formData, content });
-              }}
-              config={{
-                toolbar: [
-                  'heading', '|', 'bold', 'italic', '|',
-                  'bulletedList', 'numberedList', '|', 'link',
-                  'blockQuote', 'insertTable', 'undo', 'redo',
+            <Editor
+              initialValue={formData.content}
+              onEditorChange={(content) => setFormData({ ...formData, content })}
+              init={{
+                height: 400,
+                menubar: false,
+                branding: false,
+                promotion: false,
+                plugins: [
+                  'lists', 'link', 'charmap', 'preview',
+                  'anchor', 'searchreplace', 'visualblocks',
+                  'insertdatetime', 'table', 'wordcount',
                 ],
+                toolbar: 'undo redo | blocks | ' +
+                  'bold italic | alignleft aligncenter ' +
+                  'alignright alignjustify | bullist numlist | ' +
+                  'removeformat',
+                content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px; color: white; }',
+                content_css: 'dark',
+                skin: 'oxide-dark',
+                statusbar: false,
+                readonly: false,
               }}
             />
           </div>
