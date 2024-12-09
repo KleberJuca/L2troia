@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import React from 'react';
 
 export default function Register() {
   const [formData, setFormData] = useState({
@@ -10,6 +9,7 @@ export default function Register() {
     password: '',
     confirmPassword: '',
   });
+  const [acceptedRules, setAcceptedRules] = useState(false);
   const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -18,12 +18,25 @@ export default function Register() {
     navigate('/login');
   };
 
+  const gameRules = [
+    "1. Respeite todos os jogadores e mantenha um ambiente amigável.",
+    "2. É proibido o uso de programas externos (hacks, bots, etc).",
+    "3. Não é permitido compartilhar contas ou itens entre contas.",
+    "4. O comércio de itens por dinheiro real é estritamente proibido.",
+    "5. Respeite as regras de chat e evite spam.",
+    "6. Bugs devem ser reportados imediatamente à administração.",
+    "7. Contas inativas por mais de 90 dias podem ser deletadas.",
+    "8. A administração reserva o direito de banir contas que violem as regras.",
+    "9. Todas as transações são monitoradas e registradas.",
+    "10. Divirta-se e jogue com fair play!"
+  ];
+
   return (
-    <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen flex items-center justify-center bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="max-w-md w-full space-y-8 p-8 rounded-lg"
+        className="max-w-md w-full space-y-8 bg-gray-800 p-8 rounded-lg"
       >
         <div>
           <h2 className="mt-6 text-center text-3xl font-extrabold text-white">
@@ -82,10 +95,41 @@ export default function Register() {
             </div>
           </div>
 
+          {/* Game Rules */}
+          <div className="mt-4">
+            <h3 className="text-lg font-bold text-white mb-2">Regras do Jogo</h3>
+            <div className="bg-gray-700 p-4 rounded-md h-48 overflow-y-auto">
+              {gameRules.map((rule, index) => (
+                <p key={index} className="text-gray-300 mb-2">
+                  {rule}
+                </p>
+              ))}
+            </div>
+          </div>
+
+          {/* Rules Acceptance */}
+          <div className="flex items-center">
+            <input
+              type="checkbox"
+              id="accept-rules"
+              checked={acceptedRules}
+              onChange={(e) => setAcceptedRules(e.target.checked)}
+              className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+            />
+            <label htmlFor="accept-rules" className="ml-2 text-sm text-gray-300">
+              Li e aceito as regras do jogo
+            </label>
+          </div>
+
           <div>
             <button
               type="submit"
-              className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+              disabled={!acceptedRules}
+              className={`group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white ${
+                acceptedRules
+                  ? 'bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'
+                  : 'bg-gray-600 cursor-not-allowed'
+              }`}
             >
               Registrar
             </button>

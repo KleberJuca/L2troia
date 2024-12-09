@@ -2,8 +2,6 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../../store/authStore';
 import { motion } from 'framer-motion';
-import React from 'react';
-
 
 export default function Login() {
   const [credentials, setCredentials] = useState({ username: '', password: '' });
@@ -22,11 +20,11 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen flex items-center justify-center bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="max-w-md w-full space-y-8  p-8 rounded-lg"
+        className="max-w-md w-full space-y-8 bg-gray-800 p-8 rounded-lg"
       >
         <div>
           <h2 className="mt-6 text-center text-3xl font-extrabold text-white">

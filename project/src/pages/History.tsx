@@ -1,11 +1,9 @@
 import { motion } from 'framer-motion';
-import React from 'react';
-
 
 export default function History() {
   return (
     <div className="container mx-auto px-4 py-12">
-      <motion.h1
+      <motion.h1 
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         className="text-4xl font-bold text-center mb-12"
@@ -14,29 +12,29 @@ export default function History() {
       </motion.h1>
 
       <div className="grid md:grid-cols-2 gap-8">
-        <motion.div
+        <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           className="bg-gray-800 p-6 rounded-lg"
         >
-          <img
-            src="/images/interlude-castle.jpg"
-            alt="Lineage 2 Interlude Castle"
-            className="w-full h-auto max-w-full object-cover rounded-lg shadow-lg mb-6"
+          <img 
+            src="/images/interlude-castle.jpg" 
+            alt="Lineage 2 Interlude Castle" 
+            className="w-full h-64 object-cover rounded-lg mb-6"
           />
           <h2 className="text-2xl font-bold mb-4">A Era de Interlude</h2>
           <p className="text-gray-300 mb-4">
-            Interlude é considerada por muitos como a era dourada do Lineage 2. Lançada em 2007,
-            esta Chronicle trouxe um equilíbrio perfeito entre PvP e PvE, introduzindo novos sistemas
+            Interlude é considerada por muitos como a era dourada do Lineage 2. Lançada em 2007, 
+            esta Chronicle trouxe um equilíbrio perfeito entre PvP e PvE, introduzindo novos sistemas 
             e melhorias significativas no jogo.
           </p>
           <p className="text-gray-300">
-            Com level máximo 80, classes bem balanceadas e um sistema de siege warfare
+            Com level máximo 80, classes bem balanceadas e um sistema de siege warfare 
             aprimorado, Interlude se tornou a Chronicle mais popular entre os jogadores.
           </p>
         </motion.div>
 
-        <motion.div
+        <motion.div 
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           className="space-y-6"
@@ -64,7 +62,7 @@ export default function History() {
         </motion.div>
       </div>
 
-      <motion.div
+      <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         className="mt-12 bg-gray-800 p-6 rounded-lg"

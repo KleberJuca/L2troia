@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { useAuthStore } from '../store/authStore';
-import React from 'react';
-
+import { useAdminStore } from '../store/adminStore';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { isAuthenticated, logout, user } = useAuthStore();
+  const { isAuthenticated: isAdmin } = useAdminStore();
 
   const handleLogout = () => {
     logout();
@@ -20,7 +20,7 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <img src="/logo.png" alt="L2 Troia" className="h-8 w-8 mr-2" />
-              <span className="text-xl font-bold">L2 Troia</span>
+              <span className="text-xl font-bold text-white">L2 Troia</span>
             </Link>
             {isAuthenticated && user && (
               <span className="ml-4 text-gray-300 font-medium">
@@ -52,6 +52,11 @@ export default function Navbar() {
                 <Link to="/login" className="text-gray-300 hover:text-white transition">Login</Link>
                 <Link to="/register" className="text-gray-300 hover:text-white transition">Registro</Link>
               </>
+            )}
+            {isAdmin && (
+              <Link to="/admin/dashboard" className="text-gray-300 hover:text-white transition">
+                Admin
+              </Link>
             )}
           </div>
 
@@ -92,6 +97,11 @@ export default function Navbar() {
                   <Link to="/login" className="block px-3 py-2 text-gray-300 hover:text-white transition">Login</Link>
                   <Link to="/register" className="block px-3 py-2 text-gray-300 hover:text-white transition">Registro</Link>
                 </>
+              )}
+              {isAdmin && (
+                <Link to="/admin/dashboard" className="block px-3 py-2 text-gray-300 hover:text-white transition">
+                  Admin
+                </Link>
               )}
             </div>
           </div>

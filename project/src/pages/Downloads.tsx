@@ -1,7 +1,19 @@
 import { motion } from 'framer-motion';
 import { ArrowDownTrayIcon, ComputerDesktopIcon } from '@heroicons/react/24/outline';
+import { useServerSettings } from '../hooks/useServerSettings';
+import { useEffect } from 'react';
 
 export default function Downloads() {
+  const { settings, loadSettings } = useServerSettings();
+
+  useEffect(() => {
+    loadSettings();
+  }, []);
+
+  const handleDownload = (url: string) => {
+    window.open(url, '_blank');
+  };
+
   return (
     <div className="container mx-auto px-4 py-12">
       <motion.h1 
@@ -23,13 +35,18 @@ export default function Downloads() {
             <ArrowDownTrayIcon className="h-8 w-8 text-blue-500 mr-3" />
             <h2 className="text-2xl font-bold">Cliente Completo</h2>
           </div>
-          <p className="text-gray-400 mb-4">Download do cliente completo do L2 Troia</p>
+          <p className="text-gray-400 mb-4">Download do cliente completo do L2 Troia - {settings?.chronicle}</p>
           <ul className="text-gray-300 mb-6 space-y-2">
-            <li>• Versão: 1.5.2</li>
-            <li>• Tamanho: 4.2 GB</li>
-            <li>• Última atualização: 22/11/2023</li>
+            <li>• Versão: {settings?.clientVersion}</li>
+            <li>• Tamanho: {settings?.clientSize}</li>
+            <li>• Última atualização: {new Date().toLocaleDateString()}</li>
           </ul>
-          <button className="btn-primary w-full">Download Cliente</button>
+          <button 
+            className="btn-primary w-full"
+            onClick={() => settings?.clientDownloadUrl && handleDownload(settings.clientDownloadUrl)}
+          >
+            Download Cliente
+          </button>
         </motion.div>
 
         <motion.div 
@@ -43,11 +60,16 @@ export default function Downloads() {
           </div>
           <p className="text-gray-400 mb-4">Patch com as últimas atualizações do servidor</p>
           <ul className="text-gray-300 mb-6 space-y-2">
-            <li>• Versão: 1.2.0</li>
-            <li>• Tamanho: 250 MB</li>
-            <li>• Última atualização: 22/11/2023</li>
+            <li>• Versão: {settings?.patchVersion}</li>
+            <li>• Tamanho: {settings?.patchSize}</li>
+            <li>• Última atualização: {new Date().toLocaleDateString()}</li>
           </ul>
-          <button className="btn-primary w-full">Download Patch</button>
+          <button 
+            className="btn-primary w-full"
+            onClick={() => settings?.patchDownloadUrl && handleDownload(settings.patchDownloadUrl)}
+          >
+            Download Patch
+          </button>
         </motion.div>
       </div>
 

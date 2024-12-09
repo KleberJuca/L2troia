@@ -9,10 +9,11 @@ import Wiki from './pages/Wiki';
 import Login from './pages/Auth/Login';
 import Register from './pages/Auth/Register';
 import Dashboard from './pages/Dashboard/Dashboard';
+import Shop from './pages/Dashboard/Shop/Shop';
 import Donation from './pages/Dashboard/Donation';
+import AdminLogin from './pages/Admin/AdminLogin';
+import AdminDashboard from './pages/Admin/AdminDashboard';
 import Footer from './components/Footer';
-import React from 'react';
-
 
 function App() {
   return (
@@ -36,8 +37,11 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/dashboard" element={<Dashboard />}>
+              <Route path="shop" element={<Shop />} />
               <Route path="donation" element={<Donation />} />
             </Route>
+            <Route path="/admin/login" element={<AdminLogin />} />
+            <Route path="/admin/*" element={<AdminDashboard />} />
           </Routes>
         </main>
         <Footer />

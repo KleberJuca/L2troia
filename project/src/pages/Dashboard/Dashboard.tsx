@@ -1,22 +1,33 @@
 import { useAuthStore } from '../../store/authStore';
+import { usePlayerStore } from '../../store/playerStore';
 import { Link, Outlet } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import React from 'react';
+import { CreditCardIcon } from '@heroicons/react/24/outline';
 
 export default function Dashboard() {
   const user = useAuthStore((state) => state.user);
+  const { balance } = usePlayerStore();
 
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen bg-gray-900">
       <div className="container mx-auto px-4 py-8">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className=" rounded-lg p-6 mb-8"
+          className="bg-gray-800 rounded-lg p-6 mb-8"
         >
-          <h1 className="text-2xl font-bold text-white mb-4">
-            Bem-vindo, {user?.username}!
-          </h1>
+          <div className="flex justify-between items-center mb-6">
+            <div>
+              <h1 className="text-2xl font-bold text-white mb-2">
+                Bem-vindo, {user?.username}!
+              </h1>
+              <div className="flex items-center text-yellow-400">
+                <CreditCardIcon className="h-5 w-5 mr-2" />
+                <span className="font-bold">{balance} L2 Coins</span>
+              </div>
+            </div>
+          </div>
+
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             <Link
               to="/dashboard"
