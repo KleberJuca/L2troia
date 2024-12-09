@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import { User } from '../../types/user';
+import React from 'react';
 
 interface BanModalProps {
   user: User;

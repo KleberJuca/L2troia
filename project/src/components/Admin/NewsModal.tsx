@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import { NewsItem } from '../../types/news';
 import { Editor } from '@tinymce/tinymce-react';
+import React from 'react';
 
 interface NewsModalProps {
   news: NewsItem | null;
@@ -15,7 +16,8 @@ export default function NewsModal({ news, onSave, onClose }: NewsModalProps) {
     content: '',
     author: '',
     published: true,
-    image: ''
+    image: '',
+    date: new Date().toISOString(), // Adicionado campo `date`
   });
 
   useEffect(() => {
@@ -25,14 +27,15 @@ export default function NewsModal({ news, onSave, onClose }: NewsModalProps) {
         content: news.content,
         author: news.author,
         published: news.published,
-        image: news.image || ''
+        image: news.image || '',
+        date: news.date || new Date().toISOString(), // Usa a data existente ou define a data atual
       });
     }
   }, [news]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    onSave(formData);
+    onSave(formData); // Agora `formData` inclui todos os campos necessários
   };
 
   return (
@@ -72,7 +75,7 @@ export default function NewsModal({ news, onSave, onClose }: NewsModalProps) {
                 plugins: [
                   'lists', 'link', 'charmap', 'preview',
                   'anchor', 'searchreplace', 'visualblocks',
-                  'insertdatetime', 'table', 'wordcount'
+                  'insertdatetime', 'table', 'wordcount',
                 ],
                 toolbar: 'undo redo | blocks | ' +
                   'bold italic | alignleft aligncenter ' +
@@ -82,7 +85,7 @@ export default function NewsModal({ news, onSave, onClose }: NewsModalProps) {
                 content_css: 'dark',
                 skin: 'oxide-dark',
                 statusbar: false,
-                readonly: false
+                readonly: false,
               }}
             />
           </div>

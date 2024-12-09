@@ -3,6 +3,7 @@ import { XMarkIcon } from '@heroicons/react/24/outline';
 import { User, balanceUpdateSchema, BalanceUpdateInput } from '../../types/user';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
+import React from 'react';
 
 interface BalanceModalProps {
   user: User;

@@ -14,6 +14,7 @@ import Donation from './pages/Dashboard/Donation';
 import AdminLogin from './pages/Admin/AdminLogin';
 import AdminDashboard from './pages/Admin/AdminDashboard';
 import Footer from './components/Footer';
+import React from 'react';
 
 function App() {
   return (

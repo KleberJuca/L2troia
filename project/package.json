@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^44.0.0",
+    "@ckeditor/ckeditor5-react": "^9.4.0",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
     "@hookform/resolvers": "^3.3.2",
@@ -22,8 +24,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.48.2",
+    "react-quill": "^2.0.0",
     "react-router-dom": "^6.20.0",
-    "tinymce": "^6.7.3",
+    "tinymce": "^6.8.5",
     "zod": "^3.22.4",
     "zustand": "^4.4.7"
   },
