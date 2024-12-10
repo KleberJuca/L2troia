@@ -7,6 +7,7 @@ import TwitchStreams from '../components/TwitchStreams';
 import { NewsItem } from '../types/news';
 import { newsService } from '../services/api/newsService';
 import { useNavigate } from 'react-router-dom';
+import React from 'react';
 
 export default function Home() {
   const { settings } = useSettingsStore();

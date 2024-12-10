@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { streamService } from '../services/api/streamService';
 import { Stream } from '../types/stream';
+import React from 'react';
 
 export default function TwitchStreams() {
   const [streams, setStreams] = useState<Stream[]>([]);

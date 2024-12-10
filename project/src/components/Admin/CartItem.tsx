@@ -1,4 +1,5 @@
 import { ShopItem } from '../../types/shop';
+import React from 'react';
 
 interface CartItemProps {
   item: ShopItem;

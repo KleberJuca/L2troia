@@ -7,6 +7,7 @@ export interface ShopItemContent {
 
 export interface ShopItem {
   id: number;
+  cartId?: string;
   name: string;
   price: number;
   category: string;

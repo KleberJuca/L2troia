@@ -3,6 +3,7 @@ import { XMarkIcon } from '@heroicons/react/24/outline';
 import { StreamInput, streamSchema } from '../../types/stream';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
+import React from 'react';
 
 interface StreamModalProps {
   onAdd: (stream: StreamInput) => void;
