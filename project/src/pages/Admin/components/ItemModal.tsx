@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { XMarkIcon, PlusIcon, TrashIcon } from '@heroicons/react/24/outline';
+import React from 'react';
 
 interface ShopItemContent {
   id: string;

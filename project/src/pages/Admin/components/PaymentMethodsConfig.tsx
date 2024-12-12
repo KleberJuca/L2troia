@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { usePaymentStore } from '../../../store/paymentStore';
+import React from 'react';
 
 export default function PaymentMethodsConfig() {
   const { paymentMethods, updatePaymentMethod } = usePaymentStore();

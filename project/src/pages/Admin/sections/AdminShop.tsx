@@ -6,6 +6,7 @@ import { useShopManagement } from '../../../hooks/useShopManagement';
 import { formatPrice } from '../../../utils/validation';
 import { useState } from 'react';
 import { ShopItem } from '../../../types/shop';
+import React from 'react';
 
 export default function AdminShop() {
   const { items, loading, error, loadItems, createItem, updateItem, deleteItem } = useShopManagement();

@@ -5,6 +5,7 @@ import AdminUsers from '../sections/AdminUsers';
 import AdminShop from '../sections/AdminShop';
 import AdminStats from '../sections/AdminStats';
 import AdminSettings from '../sections/AdminSettings';
+import React from 'react';
 
 export default function AdminContent() {
   return (

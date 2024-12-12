@@ -14,6 +14,7 @@ import {
   DocumentTextIcon,
   CurrencyDollarIcon
 } from '@heroicons/react/24/outline';
+import React from 'react';
 
 export default function AdminSidebar() {
   const navigate = useNavigate();
