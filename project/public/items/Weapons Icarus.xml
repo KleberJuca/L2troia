@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list>
+
+<item id="9816" type="Weapon" name="Icarus Sword">
+    <set name="icon" val="Ica_WFS_ICOns.weapon_icarus_sowsword_i01" />
+    <set name="default_action" val="equip" />
+    <set name="weapon_type" val="SWORD" />
+    <set name="bodypart" val="rhand" />
+    <set name="random_damage" val="10" />
+    <set name="attack_range" val="40" />
+    <set name="damage_range" val="0;0;40;120" />
+    <set name="crystal_count" val="2440" />
+    <set name="crystal_type" val="S" />
+    <set name="material" val="ADAMANTAITE" />
+    <set name="weight" val="1300" />
+    <set name="price" val="50" />
+    <set name="soulshots" val="1" />
+    <set name="spiritshots" val="1" />
+    <set name="item_skill" val="3566-1" />
+    <for>
+      <set order="0x08" stat="pAtk" val="381" />
+      <set order="0x08" stat="mAtk" val="232" />
+      <set order="0x08" stat="rCrit" val="8" />
+      <set order="0x08" stat="pAtkSpd" val="479" />
+      <enchant val="0" order="0x0C" stat="pAtk" />
+      <enchant val="0" order="0x0C" stat="mAtk" />
+    </for>
+  </item>
+  <item id="9817" type="Weapon" name="Icarus Dagger">
+    <set name="icon" val="Ica_WFS_ICOns.weapon_icarus_disperser_i01" />
+    <set name="default_action" val="equip" />
+    <set name="weapon_type" val="DAGGER" />
+    <set name="bodypart" val="rhand" />
+    <set name="random_damage" val="5" />
+    <set name="attack_range" val="40" />
+    <set name="damage_range" val="0;0;40;120" />
+    <set name="crystal_count" val="2440" />
+    <set name="crystal_type" val="S" />
+    <set name="material" val="ADAMANTAITE" />
+    <set name="weight" val="950" />
+    <set name="price" val="50" />
+    <set name="soulshots" val="1" />
+    <set name="spiritshots" val="1" />
+    <set name="item_skill" val="3572-1" />
+    <for>
+      <set order="0x08" stat="pAtk" val="346" />
+      <set order="0x08" stat="mAtk" val="232" />
+      <set order="0x08" stat="rCrit" val="12" />
+      <sub order="0x10" stat="accCombat" val="3" />
+      <set order="0x08" stat="pAtkSpd" val="533" />
+      <enchant val="0" order="0x0C" stat="pAtk" />
+      <enchant val="0" order="0x0C" stat="mAtk" />
+    </for>
+  </item>
+  <item id="9818" type="Weapon" name="Icarus Magic Sword">
+    <set name="icon" val="Ica_WFS_ICOns.weapon_icarus_spirits_i01" />
+    <set name="is_magical" val="true" />
+    <set name="default_action" val="equip" />
+    <set name="weapon_type" val="SWORD" />
+    <set name="bodypart" val="rhand" />
+    <set name="random_damage" val="20" />
+    <set name="attack_range" val="40" />
+    <set name="damage_range" val="0;0;40;120" />
+    <set name="crystal_count" val="2440" />
+    <set name="crystal_type" val="S" />
+    <set name="material" val="ADAMANTAITE" />
+    <set name="weight" val="1300" />
+    <set name="price" val="50" />
+    <set name="soulshots" val="1" />
+    <set name="spiritshots" val="1" />
+    <set name="item_skill" val="3047-2" />
+    <for>
+      <set order="0x08" stat="pAtk" val="325" />
+      <set order="0x08" stat="mAtk" val="275" />
+      <set order="0x08" stat="rCrit" val="4" />
+      <add order="0x10" stat="accCombat" val="4" />
+      <set order="0x08" stat="pAtkSpd" val="479" />
+      <enchant val="0" order="0x0C" stat="pAtk" />
+      <enchant val="0" order="0x0C" stat="mAtk" />
+    </for>
+  </item>
+    <item id="9819" type="Weapon" name="Icarus Big Sword">
+    <set name="icon" val="Ica_WFS_ICOns.weapon_icarus_heavy_arms_i01" />
+    <set name="default_action" val="equip" />
+    <set name="weapon_type" val="BIGSWORD" />
+    <set name="bodypart" val="lrhand" />
+    <set name="random_damage" val="10" />
+    <set name="attack_range" val="40" />
+    <set name="damage_range" val="0;0;44;120" />
+    <set name="crystal_count" val="2440" />
+    <set name="crystal_type" val="S" />
+    <set name="material" val="ADAMANTAITE" />
+    <set name="weight" val="1380" />
+    <set name="price" val="50" />
+    <set name="soulshots" val="1" />
+    <set name="spiritshots" val="1" />
+    <set name="item_skill" val="3013-3" />
+    <for>
+      <set order="0x08" stat="pAtk" val="442" />
+      <set order="0x08" stat="mAtk" val="232" />
+      <set order="0x08" stat="rCrit" val="8" />
+      <set order="0x08" stat="pAtkSpd" val="425" />
+      <enchant val="0" order="0x0C" stat="pAtk" />
+      <enchant val="0" order="0x0C" stat="mAtk" />
+    </for>
+  </item>
+
+   <item id="9820" type="Weapon" name="Icarus Spear">
+    <set name="icon" val="Ica_WFS_ICOns.weapon_icarus_trident_i01" />
+    <set name="default_action" val="equip" />
+    <set name="weapon_type" val="POLE" />
+    <set name="bodypart" val="lrhand" />
+    <set name="random_damage" val="10" />
+    <set name="attack_range" val="80" />
+    <set name="damage_range" val="0;0;66;120" />
+    <set name="crystal_count" val="2440" />
+    <set name="crystal_type" val="S" />
+    <set name="material" val="ADAMANTAITE" />
+    <set name="weight" val="1800" />
+    <set name="price" val="50" />
+    <set name="soulshots" val="1" />
+    <set name="spiritshots" val="1" />
+    <set name="item_skill" val="3602-9" />
+    <for>
+      <set order="0x08" stat="pAtk" val="381" />
+      <set order="0x08" stat="mAtk" val="232" />
+      <set order="0x08" stat="rCrit" val="8" />
+      <sub order="0x10" stat="accCombat" val="3" />
+      <set order="0x08" stat="pAtkSpd" val="425" />
+      <enchant val="0" order="0x0C" stat="pAtk" />
+      <enchant val="0" order="0x0C" stat="mAtk" />
+    </for>
+  </item>
+  <item id="9821" type="Weapon" name="Icarus Hammer">
+    <set name="icon" val="Ica_WFS_ICOns.weapon_icarus_hammer_i01" />
+    <set name="default_action" val="equip" />
+    <set name="weapon_type" val="BLUNT" />
+    <set name="bodypart" val="rhand" />
+    <set name="random_damage" val="20" />
+    <set name="attack_range" val="40" />
+    <set name="damage_range" val="0;0;40;120" />
+    <set name="crystal_count" val="2440" />
+    <set name="crystal_type" val="S" />
+    <set name="material" val="ADAMANTAITE" />
+    <set name="weight" val="1570" />
+    <set name="price" val="50" />
+    <set name="soulshots" val="1" />
+    <set name="spiritshots" val="1" />
+    <set name="item_skill" val="3013-3" />
+    <for>
+      <set order="0x08" stat="pAtk" val="381" />
+      <set order="0x08" stat="mAtk" val="232" />
+      <set order="0x08" stat="rCrit" val="4" />
+      <add order="0x10" stat="accCombat" val="4" />
+      <set order="0x08" stat="pAtkSpd" val="479" />
+      <enchant val="0" order="0x0C" stat="pAtk" />
+      <enchant val="0" order="0x0C" stat="mAtk" />
+    </for>
+  </item>
+	<item id="9822" type="Weapon" name="Icarus Fist">
+    <set name="icon" val="Ica_WFS_ICOns.weapon_icarus_knuckle_i01" />
+    <set name="default_action" val="equip" />
+    <set name="weapon_type" val="DUALFIST" />
+    <set name="bodypart" val="lrhand" />
+    <set name="random_damage" val="5" />
+    <set name="attack_range" val="40" />
+    <set name="damage_range" val="0;0;32;120" />
+    <set name="crystal_count" val="2440" />
+    <set name="crystal_type" val="S" />
+    <set name="material" val="ADAMANTAITE" />
+    <set name="weight" val="1350" />
+    <set name="price" val="50" />
+    <set name="soulshots" val="1" />
+    <set name="spiritshots" val="1" />
+    <set name="oncrit_chance" val="27" />
+    <set name="oncrit_skill" val="3571-1" />
+    <set name="item_skill" val="3552-1" />
+    <for>
+      <set order="0x08" stat="pAtk" val="442" />
+      <set order="0x08" stat="mAtk" val="232" />
+      <set order="0x08" stat="rCrit" val="4" />
+      <add order="0x10" stat="accCombat" val="4" />
+      <set order="0x08" stat="pAtkSpd" val="425" />
+      <enchant val="0" order="0x0C" stat="pAtk" />
+      <enchant val="0" order="0x0C" stat="mAtk" />
+    </for>
+  </item>
+  <item id="9823" type="Weapon" name="Icarus Magic Blunt">
+    <set name="icon" val="Ica_WFS_ICOns.weapon_icarus_stick_i01" />
+    <set name="is_magical" val="true" />
+    <set name="default_action" val="equip" />
+    <set name="weapon_type" val="SWORD" />
+    <set name="bodypart" val="rhand" />
+    <set name="random_damage" val="20" />
+    <set name="attack_range" val="40" />
+    <set name="damage_range" val="0;0;40;120" />
+    <set name="crystal_count" val="2440" />
+    <set name="crystal_type" val="S" />
+    <set name="material" val="ADAMANTAITE" />
+    <set name="weight" val="1300" />
+    <set name="price" val="50" />
+    <set name="soulshots" val="1" />
+    <set name="spiritshots" val="1" />
+    <set name="item_skill" val="3047-2" />
+    <for>
+      <set order="0x08" stat="pAtk" val="325" />
+      <set order="0x08" stat="mAtk" val="275" />
+      <set order="0x08" stat="rCrit" val="4" />
+      <add order="0x10" stat="accCombat" val="4" />
+      <set order="0x08" stat="pAtkSpd" val="479" />
+      <enchant val="0" order="0x0C" stat="pAtk" />
+      <enchant val="0" order="0x0C" stat="mAtk" />
+    </for>
+  </item>
+   <item id="9824" type="Weapon" name="Icarus Bow">
+    <set name="icon" val="Ica_WFS_ICOns.weapon_icarus_spiter_i01" />
+    <set name="default_action" val="equip" />
+    <set name="weapon_type" val="BOW" />
+    <set name="bodypart" val="lrhand" />
+    <set name="random_damage" val="5" />
+    <set name="attack_range" val="500" />
+    <set name="damage_range" val="0;0;10;0" />
+    <set name="crystal_count" val="2440" />
+    <set name="crystal_type" val="S" />
+    <set name="material" val="ADAMANTAITE" />
+    <set name="weight" val="1650" />
+    <set name="price" val="50" />
+    <set name="soulshots" val="1" />
+    <set name="spiritshots" val="1" />
+    <set name="mp_consume" val="11" />
+    <set name="reuse_delay" val="1500" />
+    <set name="item_skill" val="3567-1" />
+    <for>
+      <set order="0x08" stat="pAtk" val="681" />
+      <set order="0x08" stat="mAtk" val="232" />
+      <set order="0x08" stat="rCrit" val="12" />
+      <sub order="0x10" stat="accCombat" val="3" />
+      <set order="0x08" stat="pAtkSpd" val="393" />
+      <enchant val="0" order="0x0C" stat="pAtk" />
+      <enchant val="0" order="0x0C" stat="mAtk" />
+    </for>
+  </item>
+
+   <item id="9825" type="Weapon" name="Icarus Dual">
+    <set name="icon" val="icon.weapon_dark_legions_edge_i00" />
+    <set name="default_action" val="equip" />
+    <set name="weapon_type" val="DUAL" />
+    <set name="bodypart" val="lrhand" />
+    <set name="random_damage" val="10" />
+    <set name="attack_range" val="40" />
+    <set name="damage_range" val="0;0;44;120" />
+    <set name="crystal_count" val="2440" />
+    <set name="crystal_type" val="S" />
+    <set name="material" val="ADAMANTAITE" />
+    <set name="weight" val="2080" />
+    <set name="price" val="50" />
+    <set name="soulshots" val="1" />
+    <set name="spiritshots" val="1" />
+    <set name="enchant4_skill" val="3570-1" />
+    <set name="item_skill" val="3552-1" />
+    <for>
+      <set order="0x08" stat="pAtk" val="442" />
+      <set order="0x08" stat="mAtk" val="232" />
+      <set order="0x08" stat="rCrit" val="8" />
+      <set order="0x08" stat="pAtkSpd" val="425" />
+      <enchant val="0" order="0x0C" stat="pAtk" />
+      <enchant val="0" order="0x0C" stat="mAtk" />
+    </for>
+  </item>
+  
+
+</list>

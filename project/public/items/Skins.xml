@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<item id="12500" type="EtcItem" name="Formal Wear Japaan - Event Use">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="false" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12501" type="EtcItem" name="Formal Wear Japaan - Event Use">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="false" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12502" type="EtcItem" name="Skull Skin">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="True" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12503" type="EtcItem" name="Formal Wear Japaan - Event Use">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="false" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12504" type="EtcItem" name="Skull Skin">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="True" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12505" type="EtcItem" name="Formal Wear Japaan - Event Use">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="false" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12506" type="EtcItem" name="Skull Skin">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="True" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12507" type="EtcItem" name="Formal Wear Japaan - Event Use">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="false" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12508" type="EtcItem" name="Formal Wear Japaan - Event Use">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="false" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12509" type="EtcItem" name="Formal Wear Japaan - Event Use">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="false" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12510" type="EtcItem" name="Formal Wear Japaan - Event Use">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="false" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12511" type="EtcItem" name="Skull Skin">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="True" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12512" type="EtcItem" name="Skull Skin">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="True" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12513" type="EtcItem" name="Skull Skin">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="True" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12514" type="EtcItem" name="Skull Skin">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="True" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12515" type="EtcItem" name="Skull Skin">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="True" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12516" type="EtcItem" name="Skull Skin">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="True" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12517" type="EtcItem" name="Skull Skin">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="True" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12518" type="EtcItem" name="Skull Skin">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="True" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12519" type="EtcItem" name="Skull Skin">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="True" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12520" type="EtcItem" name="Skull Skin">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="True" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12521" type="EtcItem" name="Skull Skin">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="True" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12522" type="EtcItem" name="Skull Skin">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="True" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12523" type="EtcItem" name="Formal Wear Japaan - Event Use">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="false" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12524" type="EtcItem" name="Formal Wear Japaan - Event Use">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="false" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12525" type="EtcItem" name="Formal Wear Japaan - Event Use">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="false" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12526" type="EtcItem" name="Formal Wear Japaan - Event Use">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="false" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12527" type="EtcItem" name="Formal Wear Japaan - Event Use">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="false" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12528" type="EtcItem" name="Formal Wear Japaan - Event Use">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="false" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12529" type="EtcItem" name="Formal Wear Japaan - Event Use">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="false" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12530" type="EtcItem" name="Formal Wear Japaan - Event Use">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="false" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12531" type="EtcItem" name="Formal Wear Japaan - Event Use">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="false" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12532" type="EtcItem" name="Formal Wear Japaan - Event Use">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="false" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12533" type="EtcItem" name="Formal Wear Japaan - Event Use">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="false" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12534" type="EtcItem" name="Formal Wear Japaan - Event Use">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="false" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12535" type="EtcItem" name="Skull Skin">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="True" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	<item id="12536" type="EtcItem" name="Skull Skin">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="True" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	
+	<item id="9668" type="EtcItem" name="Skull Skin">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="True" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	
+	<item id="9669" type="EtcItem" name="Skull Skin">
+	<set name="material" val="LEATHER" />
+	<set name="is_tradable" val="false" />
+	<set name="is_dropable" val="True" />
+	<set name="is_sellable" val="false" />
+	<set name="is_destroyable" val="true" />
+	<set name="is_stackable" val="false" />
+	<set name="handler" val="Visual" />
+	</item>
+	
+	
+	
+</list>

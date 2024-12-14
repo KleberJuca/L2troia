@@ -1,0 +1,692 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list>
+
+  <item id="20105" type="Weapon" name="Dinasty Magic Sword">
+    <set name="icon" val="ct1icon.weapon_dynasty_magic_sword_i01" />
+    <set name="is_magical" val="true" />
+    <set name="default_action" val="equip" />
+    <set name="weapon_type" val="SWORD" />
+    <set name="bodypart" val="rhand" />
+    <set name="random_damage" val="20" />
+    <set name="attack_range" val="40" />
+    <set name="damage_range" val="0;0;40;120" />
+    <set name="crystal_count" val="2440" />
+    <set name="crystal_type" val="S" />
+    <set name="material" val="ADAMANTAITE" />
+    <set name="weight" val="1300" />
+    <set name="price" val="50" />
+    <set name="soulshots" val="1" />
+    <set name="spiritshots" val="1" />
+    <set name="item_skill" val="3047-2" />
+    <for>
+      <set order="0x08" stat="pAtk" val="325" />
+      <set order="0x08" stat="mAtk" val="275" />
+      <set order="0x08" stat="rCrit" val="4" />
+      <add order="0x10" stat="accCombat" val="4" />
+      <set order="0x08" stat="pAtkSpd" val="479" />
+      <enchant val="0" order="0x0C" stat="pAtk" />
+      <enchant val="0" order="0x0C" stat="mAtk" />
+    </for>
+  </item>
+  <item id="20106" type="Weapon" name="Dinasty Magic Sword PvP">
+    <set name="icon" val="ct1icon.weapon_dynasty_magic_sword_i01" />
+    <set name="is_magical" val="true" />
+    <set name="default_action" val="equip" />
+    <set name="weapon_type" val="SWORD" />
+    <set name="bodypart" val="rhand" />
+    <set name="random_damage" val="20" />
+    <set name="attack_range" val="40" />
+    <set name="damage_range" val="0;0;40;120" />
+    <set name="crystal_count" val="2440" />
+    <set name="crystal_type" val="S" />
+    <set name="material" val="ADAMANTAITE" />
+    <set name="weight" val="1300" />
+    <set name="price" val="50" />
+    <set name="soulshots" val="1" />
+    <set name="spiritshots" val="1" />
+    <set name="item_skill" val="3047-2" />
+    <for>
+      <set order="0x08" stat="pAtk" val="325" />
+      <set order="0x08" stat="mAtk" val="275" />
+      <set order="0x08" stat="rCrit" val="4" />
+      <add order="0x10" stat="accCombat" val="4" />
+      <set order="0x08" stat="pAtkSpd" val="479" />
+      <enchant val="0" order="0x0C" stat="pAtk" />
+      <enchant val="0" order="0x0C" stat="mAtk" />
+    </for>
+  </item>
+
+
+   <item id="20100" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+    <item id="20101" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20102" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20103" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20104" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20107" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+    <item id="20108" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20109" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20110" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20111" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20112" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20113" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20114" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20115" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20116" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20117" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20118" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20119" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20120" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20121" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20122" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20123" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20124" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20125" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20104" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20126" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20127" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20128" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20129" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20130" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20131" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20132" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20133" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20134" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20135" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+   <item id="20136" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+     <item id="20137" type="Armor" name="Dynasty Shield">
+    <set name="icon" val="ct1icon.weapon_dynasty_shield_i00" />
+    <set name="default_action" val="equip" />
+    <set name="bodypart" val="lhand" />
+    <set name="crystal_type" val="S" />
+    <set name="crystal_count" val="188" />
+    <set name="material" val="BONE" />
+    <set name="weight" val="1170" />
+    <set name="price" val="3760000" />
+    <for>
+      <sub order="0x10" stat="rEvas" val="8" />
+      <set order="0x08" stat="rShld" val="20" />
+      <set order="0x08" stat="sDef" val="290" />
+      <enchant val="0" order="0x0C" stat="sDef" />
+    </for>
+  </item>
+  
+
+ 
+
+  
+ 
+</list>

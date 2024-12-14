@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<item id="10056" type="Armor" name="Earring of Antharas">
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="crystal_type" val="S" />
+		<set name="crystal_count" val="185" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="price" val="3700000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="7300-1" />
+		<for>
+			<add order="0x10" stat="mDef" val="171" />
+			<add order="0x40" stat="maxMp" val="131" />
+			<enchant order="0x0C" stat="mDef" val="0" />
+		</for>
+	</item>
+	
+		<item id="10057" type="Armor" name="Necklace of Valakas">
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="neck" />
+		<set name="crystal_type" val="S" />
+		<set name="crystal_count" val="247" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="price" val="4940000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="7301-1" />
+		<for>
+			<add order="0x10" stat="mDef" val="195" />
+			<add order="0x40" stat="maxMp" val="142" />
+			<enchant order="0x0C" stat="mDef" val="0" />
+		</for>
+	</item>
+	<item id="10058" type="Armor" name="Ring of Baium">
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="crystal_type" val="S" />
+		<set name="crystal_count" val="86" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="price" val="1730000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="7302-1" />
+		<for>
+			<add order="0x10" stat="mDef" val="148" />
+			<add order="0x40" stat="maxMp" val="121" />
+			<enchant order="0x0C" stat="mDef" val="0" />
+		</for>
+	</item>	
+
+	<item id="10059" type="Armor" name="Zaken's Earring">
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="crystal_type" val="S" />
+		<set name="crystal_count" val="129" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="price" val="2590000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="7303-1" />
+		<for>
+			<add order="0x10" stat="mDef" val="171" />
+			<add order="0x40" stat="maxMp" val="131" />
+			<enchant order="0x0C" stat="mDef" val="0" />
+		</for>
+	</item>
+	<item id="10060" type="Armor" name="Ring of Queen Ant">
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="crystal_type" val="B" />
+		<set name="crystal_count" val="82" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="price" val="616000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="item_skill" val="7304-1" />
+		<for>
+			<add order="0x10" stat="mDef" val="148" />
+			<add order="0x40" stat="maxMp" val="121" />
+			<enchant order="0x0C" stat="mDef" val="0" />
+		</for>
+	</item>
+	<item id="10061" type="Armor" name="Frintezza's Necklace">
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="neck" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="item_skill" val="7305-1" />
+		<for>
+			<add order="0x10" stat="mDef" val="195" />
+			<add order="0x40" stat="maxMp" val="142" />
+			<enchant order="0x0C" stat="mDef" val="0" />
+		</for>
+	</item>
+
+	
+		
+</list>

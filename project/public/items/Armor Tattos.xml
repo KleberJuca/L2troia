@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+
+<item id="9305" type="Armor" name="Tattoo of Power">
+    <set name="icon" val="icon.weapon_voodoo_doll_i00" />
+    <set name="default_action" val="equip" />
+    <set name="armor_type" val="NONE" />
+    <set name="bodypart" val="underwear" />
+    <set name="material" val="DYESTUFF" />
+    <set name="weight" val="4200" />
+    <set name="price" val="36900" />
+<for>
+	<add order="0x10" stat="pDef" val="65" />
+	 <mul order="0x30" stat="pAtkSpd" val="1.12"/> <!-- Attack Speed +10% -->
+	<mul order="0x30" stat="runSpd" val="1.3"/> <!-- Speed. +3% -->
+	<mul order="0x30" stat="pDef" val="1.10"/> <!-- P.def. +10% -->
+	<mul order="0x30" stat="mDef" val="1.10"/> <!-- M.def. +10% -->
+	<enchant order="0x0C" stat="pDef" val="0" />
+</for>
+</item>
+
+<item id="9306" type="Armor" name="Tattoo of Power">
+    <set name="icon" val="icon.weapon_voodoo_doll_i00" />
+    <set name="default_action" val="equip" />
+    <set name="armor_type" val="NONE" />
+    <set name="bodypart" val="underwear" />
+    <set name="material" val="DYESTUFF" />
+    <set name="weight" val="4200" />
+    <set name="price" val="36900" />
+<for>
+	<add order="0x10" stat="pDef" val="65" />
+	 <mul order="0x30" stat="mAtkSpd" val="1.05"/> <!-- cast Speed +10% -->
+	<mul order="0x30" stat="runSpd" val="1.3"/> <!-- Speed. +3% -->
+	<mul order="0x30" stat="pDef" val="1.10"/> <!-- P.def. +10% -->
+	<mul order="0x30" stat="mDef" val="1.10"/> <!-- M.def. +10% -->
+	<enchant order="0x0C" stat="pDef" val="0" />
+</for>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+<item id="19000" type="Armor" name="TATTOO FIGHT RIGHT">
+    <set name="icon" val="icon.weapon_voodoo_doll_i00" />
+    <set name="default_action" val="equip" />
+    <set name="armor_type" val="NONE" />
+    <set name="bodypart" val="hair" />
+    <set name="material" val="DYESTUFF" />
+    <set name="weight" val="4200" />
+    <set name="price" val="36900" />
+<for>
+	<add order="0x10" stat="pDef" val="100" />
+	<add order="0x40" stat="maxHp" val="500"/> <!-- Maximum HP +2000 -->
+	<add order="0x40" stat="maxMp" val="450"/> <!-- Maximum HP +2000 -->
+	<add order="0x40" stat="pAtkSpd" val="500"/>
+	<mul order="0x30" stat="runSpd" val="1.20"/> <!-- Speed. +3% -->
+	<enchant order="0x0C" stat="pDef" val="0" />
+	<mul order="0x30" stat="pDef" val="1.05"/> <!-- P.def. +10% -->
+	<mul order="0x30" stat="mDef" val="1.05"/> <!-- M.def. +10% -->
+</for>
+</item>
+<item id="19001" type="Armor" name="TATTOO MAGIC RIGHT">
+    <set name="icon" val="icon.weapon_voodoo_doll_i00" />
+    <set name="default_action" val="equip" />
+    <set name="armor_type" val="NONE" />
+    <set name="bodypart" val="hair" />
+    <set name="material" val="DYESTUFF" />
+    <set name="weight" val="4200" />
+    <set name="price" val="36900" />
+<for>
+	<add order="0x10" stat="pDef" val="100" />
+	<add order="0x40" stat="maxHp" val="500"/> <!-- Maximum HP +2000 -->
+	<add order="0x40" stat="maxMp" val="500"/> <!-- Maximum HP +2000 -->
+	<add order="0x40" stat="mAtkSpd" val="500"/>
+	<mul order="0x30" stat="runSpd" val="1.20"/> <!-- Speed. +3% -->
+	<enchant order="0x0C" stat="pDef" val="0" />
+	<mul order="0x30" stat="pDef" val="1.05"/> <!-- P.def. +5% -->
+	<mul order="0x30" stat="mDef" val="1.05"/> <!-- M.def. +5% -->
+</for>
+</item>
+<item id="19002" type="Armor" name="TATTOO ROGUE LEFT">
+    <set name="icon" val="icon.weapon_voodoo_doll_i00" />
+    <set name="default_action" val="equip" />
+    <set name="armor_type" val="NONE" />
+    <set name="bodypart" val="underwear" />
+    <set name="material" val="DYESTUFF" />
+    <set name="weight" val="4200" />
+    <set name="price" val="36900" />
+<for>
+	<add order="0x10" stat="pDef" val="100" />
+	<add order="0x40" stat="maxHp" val="1000"/> <!-- Maximum HP +2000 -->
+	<add order="0x40" stat="maxMp" val="1000"/> <!-- Maximum HP +2000 -->
+	<add order="0x30" stat="maxCp" val="1.10"/> <!--  CP 10% -->
+	<mul order="0x30" stat="pAtk" val="1.15"/> <!-- P. Atk +10% -->
+	<mul order="0x30" stat="pDef" val="1.05"/> <!-- P.def. +5% -->
+	<mul order="0x30" stat="mDef" val="1.05"/> <!-- M.def. +5% -->
+	<enchant order="0x0C" stat="pDef" val="0" />
+</for>
+</item>
+<item id="19003" type="Armor" name="TATTOO MYSTIC LEFT">
+    <set name="icon" val="icon.weapon_voodoo_doll_i00" />
+    <set name="default_action" val="equip" />
+    <set name="armor_type" val="NONE" />
+    <set name="bodypart" val="underwear" />
+    <set name="material" val="DYESTUFF" />
+    <set name="weight" val="4200" />
+    <set name="price" val="36900" />
+<for>
+	<add order="0x10" stat="pDef" val="100" />
+	<add order="0x40" stat="maxHp" val="1000"/> <!-- Maximum HP +2000 -->
+	<add order="0x40" stat="maxMp" val="1000"/> <!-- Maximum HP +2000 -->
+	<add order="0x30" stat="maxCp" val="1.15"/> <!--  CP 10% -->
+	<mul order="0x30" stat="mAtk" val="1.15"/> <!-- M. Atk +10% -->
+	<mul order="0x30" stat="pDef" val="1.05"/> <!-- P.def. +5% -->
+	<mul order="0x30" stat="mDef" val="1.05"/> <!-- M.def. +5% -->
+	<enchant order="0x0C" stat="pDef" val="0" />
+</for>
+</item>
+<item id="19004" type="Armor" name="TATTOO TANKER LEFT">
+    <set name="icon" val="icon.weapon_voodoo_doll_i00" />
+    <set name="default_action" val="equip" />
+    <set name="armor_type" val="NONE" />
+    <set name="bodypart" val="underwear" />
+    <set name="material" val="DYESTUFF" />
+    <set name="weight" val="4200" />
+    <set name="price" val="36900" />
+<for>
+	<add order="0x10" stat="pDef" val="100" />
+	<add order="0x40" stat="maxHp" val="1000"/> <!-- Maximum HP +2000 -->
+	<add order="0x40" stat="maxMp" val="1000"/> <!-- Maximum HP +2000 -->
+	<add order="0x30" stat="maxCp" val="1.15"/> <!--  CP 10% -->
+	<mul order="0x30" stat="pAtk" val="1.05"/> <!-- P. Atk +05% -->
+	<mul order="0x30" stat="pDef" val="1.15"/> <!-- P.def. +15% -->
+	<mul order="0x30" stat="mDef" val="1.10"/> <!-- M.def. +15% -->
+	<enchant order="0x0C" stat="pDef" val="0" />
+</for>
+</item>
+	<item id="19005" type="Armor" name="TATTOO HEALER LEFT">
+    <set name="icon" val="icon.weapon_voodoo_doll_i00" />
+    <set name="default_action" val="equip" />
+    <set name="armor_type" val="NONE" />
+    <set name="bodypart" val="underwear" />
+    <set name="material" val="DYESTUFF" />
+    <set name="weight" val="4200" />
+    <set name="price" val="36900" />
+<for>
+	<add order="0x10" stat="pDef" val="100" />
+	<add order="0x40" stat="maxHp" val="1000"/> <!-- Maximum HP +2000 -->
+	<add order="0x40" stat="maxMp" val="1000"/> <!-- Maximum HP +2000 -->
+	<add order="0x30" stat="maxCp" val="1.15"/> <!--  CP 10% -->
+	<mul order="0x30" stat="mAtk" val="1.05"/> <!-- M. Atk +05% -->
+	<mul order="0x30" stat="pDef" val="1.10"/> <!-- P.def. +15% -->
+	<mul order="0x30" stat="mDef" val="1.15"/> <!-- M.def. +15% -->
+	<enchant order="0x0C" stat="pDef" val="0" />
+</for>
+</item>	
+<item id="19006" type="Armor" name="TATTOO ROGUE BLESSED">
+    <set name="icon" val="icon.weapon_voodoo_doll_i00" />
+    <set name="default_action" val="equip" />
+    <set name="armor_type" val="NONE" />
+    <set name="bodypart" val="underwear" />
+    <set name="material" val="DYESTUFF" />
+    <set name="weight" val="4200" />
+    <set name="price" val="36900" />
+<for>
+	<add order="0x10" stat="pDef" val="100" />
+	<add order="0x40" stat="maxHp" val="2000"/> <!-- Maximum HP +2000 -->
+	<add order="0x40" stat="maxMp" val="2000"/> <!-- Maximum HP +2000 -->
+	<add order="0x30" stat="maxCp" val="1.20"/> <!--  CP 15% -->
+	<mul order="0x30" stat="pAtk" val="1.25"/> <!-- P. Atk +15% -->
+	<mul order="0x30" stat="pDef" val="1.05"/> <!-- P.def. +5% -->
+	<mul order="0x30" stat="mDef" val="1.05"/> <!-- M.def. +5% -->
+	<enchant order="0x0C" stat="pDef" val="0" />
+</for>
+</item>
+<item id="19007" type="Armor" name="TATTOO MYSTIC BLESSED">
+    <set name="icon" val="icon.weapon_voodoo_doll_i00" />
+    <set name="default_action" val="equip" />
+    <set name="armor_type" val="NONE" />
+    <set name="bodypart" val="underwear" />
+    <set name="material" val="DYESTUFF" />
+    <set name="weight" val="4200" />
+    <set name="price" val="36900" />
+<for>
+	<add order="0x10" stat="pDef" val="100" />
+	<add order="0x40" stat="maxHp" val="2000"/> <!-- Maximum HP +3000 -->
+	<add order="0x40" stat="maxMp" val="2000"/> <!-- Maximum HP +3000 -->
+	<add order="0x30" stat="maxCp" val="1.20"/> <!--  CP 10% -->
+	<mul order="0x30" stat="mAtk" val="1.25"/> <!-- M. Atk +15% -->
+	<mul order="0x30" stat="pDef" val="1.05"/> <!-- P.def. +5% -->
+	<mul order="0x30" stat="mDef" val="1.05"/> <!-- M.def. +5% -->
+	<enchant order="0x0C" stat="pDef" val="0" />
+</for>
+</item>
+<item id="19008" type="Armor" name="TATTOO TANKER BLESSED">
+    <set name="icon" val="icon.weapon_voodoo_doll_i00" />
+    <set name="default_action" val="equip" />
+    <set name="armor_type" val="NONE" />
+    <set name="bodypart" val="underwear" />
+    <set name="material" val="DYESTUFF" />
+    <set name="weight" val="4200" />
+    <set name="price" val="36900" />
+<for>
+	<add order="0x10" stat="pDef" val="100" />
+	<add order="0x40" stat="maxHp" val="2000"/> <!-- Maximum HP +3000 -->
+	<add order="0x40" stat="maxMp" val="2000"/> <!-- Maximum HP +3000 -->
+	<add order="0x30" stat="maxCp" val="1.20"/> <!--  CP 15% -->
+	<mul order="0x30" stat="pAtk" val="1.05"/> <!-- P. Atk +10% -->
+	<mul order="0x30" stat="pDef" val="1.25"/> <!-- P.def. +20% -->
+	<mul order="0x30" stat="mDef" val="1.15"/> <!-- M.def. +20% -->
+	<enchant order="0x0C" stat="pDef" val="0" />
+</for>
+</item>
+	<item id="19009" type="Armor" name="TATTOO HEALER BLESSED">
+    <set name="icon" val="icon.weapon_voodoo_doll_i00" />
+    <set name="default_action" val="equip" />
+    <set name="armor_type" val="NONE" />
+    <set name="bodypart" val="underwear" />
+    <set name="material" val="DYESTUFF" />
+    <set name="weight" val="4200" />
+    <set name="price" val="36900" />
+<for>
+	<add order="0x10" stat="pDef" val="65" />
+	<add order="0x40" stat="maxHp" val="2000"/> <!-- Maximum HP +3000 -->
+	<add order="0x40" stat="maxMp" val="2000"/> <!-- Maximum HP +3000 -->
+	<add order="0x30" stat="maxCp" val="1.20"/> <!--  CP 15% -->
+	<mul order="0x30" stat="mAtk" val="1.05"/> <!-- M. Atk +10% -->
+	<mul order="0x30" stat="pDef" val="1.15"/> <!-- P.def. +20% -->
+	<mul order="0x30" stat="mDef" val="1.25"/> <!-- M.def. +20% -->
+	<enchant order="0x0C" stat="pDef" val="0" />
+</for>
+</item>	
+</list>

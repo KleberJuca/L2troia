@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { ChatBubbleLeftIcon, QuestionMarkCircleIcon } from '@heroicons/react/24/outline';
+import React from 'react';
 
 export default function Support() {
   const [formData, setFormData] = useState({

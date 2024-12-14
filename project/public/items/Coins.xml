@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+
+	<item id="9301" type="EtcItem" name="Tournament Gold Battler">
+	<set name="material" val="PAPER" />
+	<set name="price" val="10000" />
+	<set name="is_stackable" val="true" />
+	</item>
+	
+	<item id="9302" type="EtcItem" name="Gold Treasure">
+	<set name="material" val="PAPER" />
+	<set name="price" val="10000" />
+	<set name="is_stackable" val="true" />
+	</item>
+
+	<item id="9303" type="EtcItem" name="Ticket Shop">
+	<set name="material" val="PAPER" />
+	<set name="price" val="10000" />
+	<set name="is_stackable" val="true" />
+	</item>
+
+	<item id="9304" type="EtcItem" name="Raid Bloody">
+	<set name="material" val="PAPER" />
+	<set name="price" val="10000" />
+	<set name="is_stackable" val="true" />
+	</item>
+
+	<item id="9393" type="EtcItem" name="PvP Coin">
+	<set name="material" val="PAPER" />
+	<set name="price" val="10000" />
+	<set name="is_stackable" val="true" />
+	</item>
+
+	
+ 	<item id="9390" type="EtcItem" name="Silver Coin">
+	<set name="material" val="PAPER" />
+	<set name="price" val="10000" />
+	<set name="is_stackable" val="true" />
+	</item>	
+
+        <item id="9391" type="EtcItem" name="Gold Coin">	
+	<set name="material" val="PAPER" />
+	<set name="price" val="10000" />
+	<set name="is_stackable" val="true" />
+	</item>	
+
+    <item id="9392" type="EtcItem" name="Bloody Coin">	
+	<set name="material" val="PAPER" />
+	<set name="price" val="10000" />
+	<set name="is_stackable" val="true" />
+	</item>
+
+
+	<item id="9506" type="EtcItem" name="Golden Enchant(Grade S) Weapon">
+	<set name="default_action" val="skill_reduce" />
+	<set name="etcitem_type" val="BLESS_SCRL_ENCHANT_WP" />
+	<set name="is_stackable" val="true" />
+	<set name="material" val="PAPER" />
+	<set name="weight" val="120" />
+	<set name="price" val="2250000" />
+	<set name="is_oly_restricted" val="true" />
+	<set name="handler" val="EnchantScrolls" />
+	<set name="item_skill" val="2026-1" />
+	</item>
+	<item id="9507" type="EtcItem" name="Golden Enchant(Grade S) Armor">
+	<set name="default_action" val="skill_reduce" />
+	<set name="etcitem_type" val="BLESS_SCRL_ENCHANT_AM" />
+	<set name="is_stackable" val="true" />
+	<set name="material" val="PAPER" />
+	<set name="weight" val="120" />
+	<set name="price" val="1250000" />
+	<set name="is_oly_restricted" val="true" />
+	<set name="handler" val="EnchantScrolls" />
+	<set name="item_skill" val="2208-1" />
+	</item>
+	
+		<item id="959" type="EtcItem" name="Scroll: Enchant Weapon (Grade S)">
+		<set name="default_action" val="skill_reduce" />
+		<set name="etcitem_type" val="scrl_enchant_wp" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="5000000" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="EnchantScrolls" />
+	</item>
+	<item id="960" type="EtcItem" name="Scroll: Enchant Armor (Grade S)">
+		<set name="default_action" val="skill_reduce" />
+		<set name="etcitem_type" val="scrl_enchant_am" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="500000" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="EnchantScrolls" />
+	</item>
+	<item id="961" type="EtcItem" name="Crystal Scroll: Enchant Weapon (Grade S)">
+		<set name="default_action" val="skill_reduce" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="500000" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="EnchantScrolls" />
+	</item>
+	<item id="962" type="EtcItem" name="Crystal Scroll: Enchant Armor (Grade S)">
+		<set name="default_action" val="skill_reduce" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="500000" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="EnchantScrolls" />
+	</item>
+	
+	 	<item id="9400" type="EtcItem" name="Vip 7 Dias">
+	<set name="material" val="PAPER" />
+	<set name="price" val="10000" />
+	<set name="handler" val="VipItem"/>
+	<set name="is_stackable" val="false" />
+	</item>	
+ 	<item id="9401" type="EtcItem" name="Vip 30 dias">
+	<set name="material" val="PAPER" />
+	<set name="price" val="10000" />
+	<set name="handler" val="VipItem2"/>
+	<set name="is_stackable" val="false" />
+	</item>	
+ 	<item id="9402" type="EtcItem" name="Vip Eternal">
+	<set name="material" val="PAPER" />
+	<set name="price" val="10000" />
+	<set name="handler" val="VipItem3"/>
+	<set name="is_stackable" val="false" />
+	</item>	
+	<item id="9403" type="EtcItem" name="Nobles Item">	
+	<set name="material" val="PAPER" />
+	<set name="price" val="10000" />
+	<set name="handler" val="ItemNobles"/>
+	</item>
+	
+	<item id="9404" type="EtcItem" name="Clan Full">	
+	<set name="material" val="PAPER" />
+	<set name="price" val="10000" />
+	<set name="handler" val="ClanFull"/>
+	</item>
+	
+	<item id="9405" type="EtcItem" name="Hero Item">	
+	<set name="material" val="PAPER" />
+	<set name="price" val="10000" />
+	<set name="handler" val="HeroItem"/>
+	</item>
+</list>

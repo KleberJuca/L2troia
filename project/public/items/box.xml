@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list>
+  <item id="9394" type="EtcItem" name="Luck Box">
+    <set name="icon" val="icon.etc_treasure_box_i00" />
+    <set name="default_action" val="capsule" />
+    <set name="material" val="PAPER" />
+    <set name="weight" val="1" />
+    <set name="is_stackable" val="true" />
+    <set name="is_oly_restricted" val="true" />
+    <set name="handler" val="ItemSkills" />
+    <set name="item_skill" val="2207-3" />
+  </item>
+</list>

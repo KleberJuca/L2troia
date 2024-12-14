@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <item id="19801" type="Weapon" name="Dynasty Big Sword">
+    <set name="icon" val="ct1icon.weapon_dynasty_ancient_sword_i01" />
+    <set name="default_action" val="equip" />
+    <set name="weapon_type" val="BIGSWORD" />
+    <set name="bodypart" val="lrhand" />
+    <set name="random_damage" val="10" />
+    <set name="attack_range" val="40" />
+    <set name="damage_range" val="0;0;44;120" />
+    <set name="crystal_count" val="2440" />
+    <set name="crystal_type" val="S" />
+    <set name="material" val="ADAMANTAITE" />
+    <set name="weight" val="1380" />
+    <set name="price" val="50" />
+    <set name="soulshots" val="1" />
+    <set name="spiritshots" val="1" />
+    <set name="item_skill" val="3013-3" />
+    <for>
+      <set order="0x08" stat="pAtk" val="442" />
+      <set order="0x08" stat="mAtk" val="232" />
+      <set order="0x08" stat="rCrit" val="8" />
+      <set order="0x08" stat="pAtkSpd" val="425" />
+      <enchant val="0" order="0x0C" stat="pAtk" />
+      <enchant val="0" order="0x0C" stat="mAtk" />
+    </for>
+  </item>
+<item id="19802" type="Weapon" name="Dynasty Sword">
+    <set name="icon" val="ct1icon.weapon_dynasty_blade_i01" />
+    <set name="default_action" val="equip" />
+    <set name="weapon_type" val="SWORD" />
+    <set name="bodypart" val="rhand" />
+    <set name="random_damage" val="10" />
+    <set name="attack_range" val="40" />
+    <set name="damage_range" val="0;0;40;120" />
+    <set name="crystal_count" val="2440" />
+    <set name="crystal_type" val="S" />
+    <set name="material" val="ADAMANTAITE" />
+    <set name="weight" val="1300" />
+    <set name="price" val="50" />
+    <set name="soulshots" val="1" />
+    <set name="spiritshots" val="1" />
+    <set name="item_skill" val="3566-1" />
+    <for>
+      <set order="0x08" stat="pAtk" val="381" />
+      <set order="0x08" stat="mAtk" val="232" />
+      <set order="0x08" stat="rCrit" val="8" />
+      <set order="0x08" stat="pAtkSpd" val="479" />
+      <enchant val="0" order="0x0C" stat="pAtk" />
+      <enchant val="0" order="0x0C" stat="mAtk" />
+    </for>
+  </item>
+   <item id="19803" type="Weapon" name="Dynasty Big Sword">
+    <set name="icon" val="ct1icon.weapon_dynasty_twohand_sword_i01" />
+    <set name="default_action" val="equip" />
+    <set name="weapon_type" val="BIGBLUNT" />
+    <set name="bodypart" val="lrhand" />
+    <set name="random_damage" val="20" />
+    <set name="attack_range" val="40" />
+    <set name="damage_range" val="0;0;44;120" />
+    <set name="crystal_count" val="2440" />
+    <set name="crystal_type" val="S" />
+    <set name="material" val="ADAMANTAITE" />
+    <set name="weight" val="1820" />
+    <set name="price" val="50" />
+    <set name="soulshots" val="1" />
+    <set name="spiritshots" val="1" />
+    <set name="item_skill" val="3569-1" />
+    <for>
+      <set order="0x08" stat="pAtk" val="442" />
+      <set order="0x08" stat="mAtk" val="232" />
+      <set order="0x08" stat="rCrit" val="4" />
+      <add order="0x10" stat="accCombat" val="4" />
+      <set order="0x08" stat="pAtkSpd" val="425" />
+      <enchant val="0" order="0x0C" stat="pAtk" />
+      <enchant val="0" order="0x0C" stat="mAtk" />
+    </for>
+  </item>
+
+  <item id="19804" type="Weapon" name="Dinasty Magic Sword">
+    <set name="icon" val="ct1icon.weapon_dynasty_magic_sword_i01" />
+    <set name="is_magical" val="true" />
+    <set name="default_action" val="equip" />
+    <set name="weapon_type" val="SWORD" />
+    <set name="bodypart" val="rhand" />
+    <set name="random_damage" val="20" />
+    <set name="attack_range" val="40" />
+    <set name="damage_range" val="0;0;40;120" />
+    <set name="crystal_count" val="2440" />
+    <set name="crystal_type" val="S" />
+    <set name="material" val="ADAMANTAITE" />
+    <set name="weight" val="1300" />
+    <set name="price" val="50" />
+    <set name="soulshots" val="1" />
+    <set name="spiritshots" val="1" />
+    <set name="item_skill" val="3047-2" />
+    <for>
+      <set order="0x08" stat="pAtk" val="325" />
+      <set order="0x08" stat="mAtk" val="275" />
+      <set order="0x08" stat="rCrit" val="4" />
+      <add order="0x10" stat="accCombat" val="4" />
+      <set order="0x08" stat="pAtkSpd" val="479" />
+      <enchant val="0" order="0x0C" stat="pAtk" />
+      <enchant val="0" order="0x0C" stat="mAtk" />
+    </for>
+  </item>
+   <item id="19805" type="Weapon" name="Dynasty Bow">
+    <set name="icon" val="ct1icon.weapon_dynasty_bow_i01" />
+    <set name="default_action" val="equip" />
+    <set name="weapon_type" val="BOW" />
+    <set name="bodypart" val="lrhand" />
+    <set name="random_damage" val="5" />
+    <set name="attack_range" val="500" />
+    <set name="damage_range" val="0;0;10;0" />
+    <set name="crystal_count" val="2440" />
+    <set name="crystal_type" val="S" />
+    <set name="material" val="ADAMANTAITE" />
+    <set name="weight" val="1650" />
+    <set name="price" val="50" />
+    <set name="soulshots" val="1" />
+    <set name="spiritshots" val="1" />
+    <set name="mp_consume" val="11" />
+    <set name="reuse_delay" val="1500" />
+    <set name="item_skill" val="3567-1" />
+    <for>
+      <set order="0x08" stat="pAtk" val="681" />
+      <set order="0x08" stat="mAtk" val="232" />
+      <set order="0x08" stat="rCrit" val="12" />
+      <sub order="0x10" stat="accCombat" val="3" />
+      <set order="0x08" stat="pAtkSpd" val="393" />
+      <enchant val="0" order="0x0C" stat="pAtk" />
+      <enchant val="0" order="0x0C" stat="mAtk" />
+    </for>
+  </item>
+  <item id="19806" type="Weapon" name="Dynasty Dagger">
+    <set name="icon" val="ct1icon.weapon_dynasty_dagger_i01" />
+    <set name="default_action" val="equip" />
+    <set name="weapon_type" val="DAGGER" />
+    <set name="bodypart" val="rhand" />
+    <set name="random_damage" val="5" />
+    <set name="attack_range" val="40" />
+    <set name="damage_range" val="0;0;40;120" />
+    <set name="crystal_count" val="2440" />
+    <set name="crystal_type" val="S" />
+    <set name="material" val="ADAMANTAITE" />
+    <set name="weight" val="950" />
+    <set name="price" val="50" />
+    <set name="soulshots" val="1" />
+    <set name="spiritshots" val="1" />
+    <set name="item_skill" val="3572-1" />
+    <for>
+      <set order="0x08" stat="pAtk" val="346" />
+      <set order="0x08" stat="mAtk" val="232" />
+      <set order="0x08" stat="rCrit" val="12" />
+      <sub order="0x10" stat="accCombat" val="3" />
+      <set order="0x08" stat="pAtkSpd" val="533" />
+      <enchant val="0" order="0x0C" stat="pAtk" />
+      <enchant val="0" order="0x0C" stat="mAtk" />
+    </for>
+  </item>
+  <item id="19807" type="Weapon" name="Dynasty Spear">
+    <set name="icon" val="ct1icon.weapon_dynasty_spear_i01" />
+    <set name="default_action" val="equip" />
+    <set name="weapon_type" val="POLE" />
+    <set name="bodypart" val="lrhand" />
+    <set name="random_damage" val="10" />
+    <set name="attack_range" val="80" />
+    <set name="damage_range" val="0;0;66;120" />
+    <set name="crystal_count" val="2440" />
+    <set name="crystal_type" val="S" />
+    <set name="material" val="ADAMANTAITE" />
+    <set name="weight" val="1800" />
+    <set name="price" val="50" />
+    <set name="soulshots" val="1" />
+    <set name="spiritshots" val="1" />
+    <set name="item_skill" val="3602-9" />
+    <for>
+      <set order="0x08" stat="pAtk" val="381" />
+      <set order="0x08" stat="mAtk" val="232" />
+      <set order="0x08" stat="rCrit" val="8" />
+      <sub order="0x10" stat="accCombat" val="3" />
+      <set order="0x08" stat="pAtkSpd" val="425" />
+      <enchant val="0" order="0x0C" stat="pAtk" />
+      <enchant val="0" order="0x0C" stat="mAtk" />
+    </for>
+  </item>
+  <item id="19808" type="Weapon" name="Dynasty Big Blunt">
+    <set name="icon" val="ct1icon.weapon_dynasty_hammer_i01" />
+    <set name="default_action" val="equip" />
+    <set name="weapon_type" val="BLUNT" />
+    <set name="bodypart" val="rhand" />
+    <set name="random_damage" val="20" />
+    <set name="attack_range" val="40" />
+    <set name="damage_range" val="0;0;40;120" />
+    <set name="crystal_count" val="2440" />
+    <set name="crystal_type" val="S" />
+    <set name="material" val="ADAMANTAITE" />
+    <set name="weight" val="1570" />
+    <set name="price" val="50" />
+    <set name="soulshots" val="1" />
+    <set name="spiritshots" val="1" />
+    <set name="item_skill" val="3013-3" />
+    <for>
+      <set order="0x08" stat="pAtk" val="381" />
+      <set order="0x08" stat="mAtk" val="232" />
+      <set order="0x08" stat="rCrit" val="4" />
+      <add order="0x10" stat="accCombat" val="4" />
+      <set order="0x08" stat="pAtkSpd" val="479" />
+      <enchant val="0" order="0x0C" stat="pAtk" />
+      <enchant val="0" order="0x0C" stat="mAtk" />
+    </for>
+  </item>
+
+   <item id="19809" type="Weapon" name="Dynasty Staff">
+    <set name="icon" val="ct1icon.weapon_dynasty_staff_i01" />
+    <set name="is_magical" val="true" />
+    <set name="default_action" val="equip" />
+    <set name="weapon_type" val="BIGBLUNT" />
+    <set name="bodypart" val="lrhand" />
+    <set name="random_damage" val="20" />
+    <set name="attack_range" val="40" />
+    <set name="damage_range" val="0;0;46;120" />
+    <set name="crystal_count" val="2440" />
+    <set name="crystal_type" val="S" />
+    <set name="material" val="ADAMANTAITE" />
+    <set name="weight" val="910" />
+    <set name="price" val="50" />
+    <set name="soulshots" val="1" />
+    <set name="spiritshots" val="1" />
+    <set name="item_skill" val="3575-1" />
+    <for>
+      <set order="0x08" stat="pAtk" val="374" />
+      <set order="0x08" stat="mAtk" val="275" />
+      <set order="0x08" stat="rCrit" val="4" />
+      <add order="0x10" stat="accCombat" val="4" />
+      <set order="0x08" stat="pAtkSpd" val="425" />
+      <enchant val="0" order="0x0C" stat="pAtk" />
+      <enchant val="0" order="0x0C" stat="mAtk" />
+    </for>
+  </item>
+	<item id="19810" type="Weapon" name="Dynasty Fist">
+    <set name="icon" val="ct1icon.weapon_dynasty_jamadhr_i01" />
+    <set name="default_action" val="equip" />
+    <set name="weapon_type" val="DUALFIST" />
+    <set name="bodypart" val="lrhand" />
+    <set name="random_damage" val="5" />
+    <set name="attack_range" val="40" />
+    <set name="damage_range" val="0;0;32;120" />
+    <set name="crystal_count" val="2440" />
+    <set name="crystal_type" val="S" />
+    <set name="material" val="ADAMANTAITE" />
+    <set name="weight" val="1350" />
+    <set name="price" val="50" />
+    <set name="soulshots" val="1" />
+    <set name="spiritshots" val="1" />
+    <set name="oncrit_chance" val="27" />
+    <set name="oncrit_skill" val="3571-1" />
+    <set name="item_skill" val="3552-1" />
+    <for>
+      <set order="0x08" stat="pAtk" val="442" />
+      <set order="0x08" stat="mAtk" val="232" />
+      <set order="0x08" stat="rCrit" val="4" />
+      <add order="0x10" stat="accCombat" val="4" />
+      <set order="0x08" stat="pAtkSpd" val="425" />
+      <enchant val="0" order="0x0C" stat="pAtk" />
+      <enchant val="0" order="0x0C" stat="mAtk" />
+    </for>
+  </item>
+    <item id="19811" type="Weapon" name="Dynasty Dual Sword">
+    <set name="icon" val="SHEV_WeaponsBeamTex.icons.g_beam_sword" />
+    <set name="default_action" val="equip" />
+    <set name="weapon_type" val="DUAL" />
+    <set name="bodypart" val="lrhand" />
+    <set name="random_damage" val="10" />
+    <set name="attack_range" val="40" />
+    <set name="damage_range" val="0;0;44;120" />
+    <set name="crystal_count" val="2440" />
+    <set name="crystal_type" val="S" />
+    <set name="material" val="ADAMANTAITE" />
+    <set name="weight" val="2080" />
+    <set name="price" val="50" />
+    <set name="soulshots" val="1" />
+    <set name="spiritshots" val="1" />
+    <set name="enchant4_skill" val="3570-1" />
+    <set name="item_skill" val="3552-1" />
+    <for>
+      <set order="0x08" stat="pAtk" val="442" />
+      <set order="0x08" stat="mAtk" val="232" />
+      <set order="0x08" stat="rCrit" val="8" />
+      <set order="0x08" stat="pAtkSpd" val="425" />
+      <enchant val="0" order="0x0C" stat="pAtk" />
+      <enchant val="0" order="0x0C" stat="mAtk" />
+    </for>
+  </item>
+
+
+</list>
