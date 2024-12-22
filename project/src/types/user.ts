@@ -5,6 +5,7 @@ export interface User {
   username: string;
   email: string;
   status: 'active' | 'banned';
+  accessLevel: string;
   lastLogin: string;
   createdAt: string;
   banReason?: string;

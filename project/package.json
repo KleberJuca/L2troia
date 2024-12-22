@@ -17,7 +17,7 @@
     "@nativescript/core": "^8.6.1",
     "@nativescript/theme": "^3.0.2",
     "@tinymce/tinymce-react": "^4.3.2",
-    "axios": "^1.6.2",
+    "axios": "^1.7.9",
     "date-fns": "^2.30.0",
     "framer-motion": "^10.16.4",
     "jwt-decode": "^4.0.0",

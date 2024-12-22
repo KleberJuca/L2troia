@@ -2,16 +2,18 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { useAuthStore } from '../store/authStore';
-import { useAdminStore } from '../store/adminStore';
+import React from 'react';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { isAuthenticated, logout, user } = useAuthStore();
-  const { isAuthenticated: isAdmin } = useAdminStore();
 
   const handleLogout = () => {
     logout();
   };
+
+  // Only show admin link if user has admin access
+  const showAdminLink = user?.accessLevel && user.accessLevel > 0;
 
   return (
     <nav className="bg-gray-800">
@@ -53,7 +55,7 @@ export default function Navbar() {
                 <Link to="/register" className="text-gray-300 hover:text-white transition">Registro</Link>
               </>
             )}
-            {isAdmin && (
+            {showAdminLink && (
               <Link to="/admin/dashboard" className="text-gray-300 hover:text-white transition">
                 Admin
               </Link>
@@ -98,7 +100,7 @@ export default function Navbar() {
                   <Link to="/register" className="block px-3 py-2 text-gray-300 hover:text-white transition">Registro</Link>
                 </>
               )}
-              {isAdmin && (
+              {showAdminLink && (
                 <Link to="/admin/dashboard" className="block px-3 py-2 text-gray-300 hover:text-white transition">
                   Admin
                 </Link>

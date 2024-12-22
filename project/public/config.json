@@ -1,0 +1,8 @@
+{
+  "api": {
+    "baseUrl": "https://localhost:7179/api",
+    "defaultHeaders": {
+      "Content-Type": "application/json"
+    }
+  }
+}
