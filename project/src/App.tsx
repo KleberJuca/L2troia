@@ -15,6 +15,7 @@ import AdminLogin from './pages/Admin/AdminLogin';
 import AdminDashboard from './pages/Admin/AdminDashboard';
 import Footer from './components/Footer';
 import React from 'react';
+import Character from './pages/Dashboard/Character';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />}>
               <Route path="shop" element={<Shop />} />
               <Route path="donation" element={<Donation />} />
+              <Route path="character" element={<Character />} />
             </Route>
             <Route path="/admin/login" element={<AdminLogin />} />
             <Route path="/admin/*" element={<AdminDashboard />} />

@@ -3,6 +3,7 @@ import { usePlayerStore } from '../../store/playerStore';
 import { Link, Outlet } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { CreditCardIcon } from '@heroicons/react/24/outline';
+import React from 'react';
 
 export default function Dashboard() {
   const user = useAuthStore((state) => state.user);
@@ -33,7 +34,7 @@ export default function Dashboard() {
               to="/dashboard"
               className="bg-blue-600 text-white rounded-lg p-4 text-center hover:bg-blue-700 transition"
             >
-              Painel
+              Historico
             </Link>
             <Link
               to="/dashboard/shop"

@@ -1,4 +1,5 @@
 import { User, UserUpdateInput, BalanceUpdateInput } from '../../types/user';
+import React from 'react';
 
 // In-memory storage for demo purposes
 let users: User[] = [
@@ -6,6 +7,7 @@ let users: User[] = [
     id: 1,
     username: 'player1',
     email: 'player1@example.com',
+    accessLevel: "1",
     status: 'active',
     lastLogin: '2023-11-22 10:30:00',
     createdAt: '2023-11-01',
@@ -15,6 +17,7 @@ let users: User[] = [
     id: 2,
     username: 'player2',
     email: 'player2@example.com',
+    accessLevel: "1",
     status: 'banned',
     lastLogin: '2023-11-21 15:45:00',
     createdAt: '2023-11-02',

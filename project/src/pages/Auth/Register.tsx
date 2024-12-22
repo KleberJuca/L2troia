@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import React from 'react';
 
 export default function Register() {
   const [formData, setFormData] = useState({
