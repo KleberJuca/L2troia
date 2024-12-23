@@ -4,7 +4,7 @@ export interface Character {
     level: number;
     className: string;
     clan: string;
-    status: string;
+    //status: string;
     lastAccess: string;
     onlineTime: number;
     hp: {

@@ -16,6 +16,7 @@ import AdminDashboard from './pages/Admin/AdminDashboard';
 import Footer from './components/Footer';
 import React from 'react';
 import Character from './pages/Dashboard/Character';
+import AccountPage from './pages/Dashboard/Account/AccountPage';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
               <Route path="shop" element={<Shop />} />
               <Route path="donation" element={<Donation />} />
               <Route path="character" element={<Character />} />
+              <Route path="account" element={<AccountPage />} />
             </Route>
             <Route path="/admin/login" element={<AdminLogin />} />
             <Route path="/admin/*" element={<AdminDashboard />} />
