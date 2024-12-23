@@ -17,6 +17,7 @@ import Footer from './components/Footer';
 import React from 'react';
 import Character from './pages/Dashboard/Character';
 import AccountPage from './pages/Dashboard/Account/AccountPage';
+import HistoryPage from './pages/Dashboard/History/HistoryPage';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/dashboard" element={<Dashboard />}>
+              <Route index element={<HistoryPage />} />
               <Route path="shop" element={<Shop />} />
               <Route path="donation" element={<Donation />} />
               <Route path="character" element={<Character />} />

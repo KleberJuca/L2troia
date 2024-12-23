@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { useTermsManagement } from '../../../hooks/useTermsManagement';
-import { Editor } from '@tinymce/tinymce-react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { termsSchema, TermsInput, Terms } from '../../../types/terms';
+import Editor from '../../../components/Editor/Editor';
+import React from 'react';
 
 export default function AdminTerms() {
   const { terms, loading, error, loadTerms, updateTerms } = useTermsManagement();
@@ -90,27 +91,7 @@ export default function AdminTerms() {
             <div>
               <Editor
                 initialValue={activeTerms.content}
-                onEditorChange={(content) => setValue('content', content)}
-                init={{
-                  height: 500,
-                  menubar: false,
-                  branding: false,
-                  promotion: false,
-                  plugins: [
-                    'lists', 'link', 'charmap', 'preview',
-                    'anchor', 'searchreplace', 'visualblocks',
-                    'insertdatetime', 'table', 'wordcount'
-                  ],
-                  toolbar: 'undo redo | blocks | ' +
-                    'bold italic | alignleft aligncenter ' +
-                    'alignright alignjustify | bullist numlist | ' +
-                    'removeformat',
-                  content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px; color: white; }',
-                  content_css: 'dark',
-                  skin: 'oxide-dark',
-                  statusbar: false,
-                  readonly: false
-                }}
+                onChange={(content) => setValue('content', content)}
               />
               {errors.content && (
                 <p className="text-red-500 text-sm mt-1">{errors.content.message}</p>

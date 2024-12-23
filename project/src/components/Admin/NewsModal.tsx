@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import { NewsItem } from '../../types/news';
-import { Editor } from '@tinymce/tinymce-react';
+import Editor from '../Editor/Editor';
 import React from 'react';
 
 interface NewsModalProps {
@@ -16,8 +16,7 @@ export default function NewsModal({ news, onSave, onClose }: NewsModalProps) {
     content: '',
     author: '',
     published: true,
-    image: '',
-    date: new Date().toISOString(), // Adicionado campo `date`
+    image: ''
   });
 
   useEffect(() => {
@@ -27,15 +26,14 @@ export default function NewsModal({ news, onSave, onClose }: NewsModalProps) {
         content: news.content,
         author: news.author,
         published: news.published,
-        image: news.image || '',
-        date: news.date || new Date().toISOString(), // Usa a data existente ou define a data atual
+        image: news.image || ''
       });
     }
   }, [news]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    onSave(formData); // Agora `formData` inclui todos os campos necessários
+    onSave(formData);
   };
 
   return (
@@ -66,27 +64,7 @@ export default function NewsModal({ news, onSave, onClose }: NewsModalProps) {
             <label className="block text-sm font-medium mb-1 text-white">Content</label>
             <Editor
               initialValue={formData.content}
-              onEditorChange={(content) => setFormData({ ...formData, content })}
-              init={{
-                height: 400,
-                menubar: false,
-                branding: false,
-                promotion: false,
-                plugins: [
-                  'lists', 'link', 'charmap', 'preview',
-                  'anchor', 'searchreplace', 'visualblocks',
-                  'insertdatetime', 'table', 'wordcount',
-                ],
-                toolbar: 'undo redo | blocks | ' +
-                  'bold italic | alignleft aligncenter ' +
-                  'alignright alignjustify | bullist numlist | ' +
-                  'removeformat',
-                content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px; color: white; }',
-                content_css: 'dark',
-                skin: 'oxide-dark',
-                statusbar: false,
-                readonly: false,
-              }}
+              onChange={(content) => setFormData({ ...formData, content })}
             />
           </div>
 
