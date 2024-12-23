@@ -59,11 +59,12 @@ export default function CharacterModal({ character, onClose }: CharacterModalPro
             <div className="flex justify-between items-start mb-2">
               <div>
                 <h2 className="text-2xl font-bold text-white">{character.name}</h2>
-                <p className="text-lg text-gray-400">Level {character.level} {character.className}</p>
+                <p className="text-lg text-gray-400">Level: {character.level} </p>
+                <p className="text-lg text-gray-400"> Classe: {character.className}</p>
               </div>
               <div className="text-right">
                 <p className="text-gray-400">Clan: <span className="text-white">{character.clan}</span></p>
-                <p className="text-gray-400">Status: <span className="text-white">{character.status}</span></p>
+                {/*<p className="text-gray-400">Status: <span className="text-white">{character.status}</span></p>*/}
               </div>
             </div>
           </div>

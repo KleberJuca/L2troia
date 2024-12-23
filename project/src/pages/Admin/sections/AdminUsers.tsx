@@ -5,6 +5,7 @@ import { User, BalanceUpdateInput } from '../../../types/user';
 import UserModal from '../../../components/Admin/UserModal';
 import BanModal from '../../../components/Admin/BanModal';
 import BalanceModal from '../../../components/Admin/BalanceModal';
+import React from 'react';
 
 export default function AdminUsers() {
   const { users, loading, error, loadUsers, updateUser, banUser, unbanUser, updateBalance } = useUserManagement();

@@ -13,6 +13,7 @@ import AdminSales from './sections/AdminSales';
 import AdminStreams from './sections/AdminStreams';
 import AdminTerms from './sections/AdminTerms';
 import AdminCoins from './sections/AdminCoins';
+import React from 'react';
 
 export default function AdminDashboard() {
   const { isAuthenticated } = useAdminStore();

@@ -56,6 +56,7 @@ export default function Register() {
                 onChange={(e) =>
                   setFormData({ ...formData, username: e.target.value })
                 }
+                maxLength={20}
               />
             </div>
             <div>

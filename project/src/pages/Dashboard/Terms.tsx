@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useTermsManagement } from '../../hooks/useTermsManagement';
+import React from 'react';
 
 export default function Terms() {
   const { terms, loading, loadTerms } = useTermsManagement();

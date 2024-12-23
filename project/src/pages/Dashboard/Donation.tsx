@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { useTermsManagement } from '../../hooks/useTermsManagement';
 import { useCoinsManagement } from '../../hooks/useCoinsManagement';
 import { Currency } from '../../types/coins';
+import React from 'react';
 
 export default function Donation() {
   const [acceptedTerms, setAcceptedTerms] = useState(false);

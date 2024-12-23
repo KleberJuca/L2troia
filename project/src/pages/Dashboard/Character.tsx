@@ -9,12 +9,12 @@ export default function CharacterPage() {
   const [selectedCharacter, setSelectedCharacter] = useState<Character | null>(null);
   const [characters] = useState<Character[]>([
     {
-      id: 1,
+      login: "DeathKnight",
       name: "DeathKnight",
       level: 76,
       className: "Paladin",
       clan: "No Clan",
-      status: "Vagabond",
+      //status: "Vagabond",
       lastAccess: "2023-11-23T15:30:00",
       onlineTime: 7230,
       hp: { current: 2000, max: 2555 },

@@ -23,7 +23,6 @@ export default function Login() {
 
     try {
       const response = await authService.login(credentials);
-      console.log(response);
       
       login({
         username: response.login,
@@ -79,6 +78,7 @@ export default function Login() {
                 onChange={(e) =>
                   setCredentials({ ...credentials, login: e.target.value })
                 }
+                maxLength={20}
               />
             </div>
             <div>
