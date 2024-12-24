@@ -12,7 +12,8 @@ export default function TwitchStreams() {
     const loadStreams = async () => {
       try {
         const data = await streamService.getStreams();
-        setStreams(data.filter(stream => stream.isLive));
+        // Filter out blocked streams and only show live ones
+        setStreams(data.filter(stream => !stream.isBlocked && stream.isLive));
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Failed to load streams');
       } finally {
@@ -21,15 +22,9 @@ export default function TwitchStreams() {
     };
 
     loadStreams();
-    
-    // Refresh streams every minute
     const interval = setInterval(loadStreams, 60000);
     return () => clearInterval(interval);
   }, []);
-
-  const handleStreamClick = (username: string) => {
-    window.open(`https://www.twitch.tv/${username}`, '_blank');
-  };
 
   if (loading) {
     return (
@@ -65,25 +60,17 @@ export default function TwitchStreams() {
       <h2 className="text-xl font-bold mb-4">Transmissões ao Vivo</h2>
       <div className="space-y-4">
         {streams.map((stream) => (
-          <div
-            key={stream.id}
-            onClick={() => handleStreamClick(stream.username)}
-            className="flex items-center space-x-4 bg-gray-700 p-4 rounded-lg cursor-pointer hover:bg-gray-600 transition"
-          >
-            <div className="relative">
-              <img
-                src={stream.thumbnailUrl}
-                alt={stream.title}
-                className="w-32 h-20 object-cover rounded"
+          <div key={stream.id} className="relative">
+            <div className="relative pt-[56.25%] bg-gray-900 rounded-lg overflow-hidden">
+              <iframe
+                src={`https://player.twitch.tv/?channel=${stream.username}&parent=${window.location.hostname}&muted=true`}
+                className="absolute top-0 left-0 w-full h-full"
+                allowFullScreen
               />
-              <span className="absolute bottom-1 right-1 bg-red-600 text-white text-xs px-1 rounded">
-                LIVE
-              </span>
             </div>
-            <div>
-              <h3 className="font-bold">{stream.username}</h3>
-              <p className="text-gray-400 text-sm">{stream.title}</p>
-              <p className="text-gray-500 text-sm">{stream.viewers} espectadores</p>
+            <div className="mt-2">
+              <p className="font-bold">{stream.username}</p>
+              <p className="text-gray-400 text-sm">{stream.viewers} espectadores</p>
             </div>
           </div>
         ))}

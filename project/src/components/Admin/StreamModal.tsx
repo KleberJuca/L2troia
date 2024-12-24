@@ -1,11 +1,20 @@
 import { useState } from 'react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
-import { StreamInput, streamSchema } from '../../types/stream';
+import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import React from 'react';
 
+const streamSchema = z.object({
+  username: z.string()
+    .min(3, "Username must be at least 3 characters")
+    .max(50, "Username cannot exceed 50 characters")
+});
+
+type StreamInput = z.infer<typeof streamSchema>;
+
 interface StreamModalProps {
+  stream?: StreamInput | null;
   onAdd: (stream: StreamInput) => void;
   onClose: () => void;
 }
@@ -54,36 +63,6 @@ export default function StreamModal({ onAdd, onClose }: StreamModalProps) {
             />
             {errors.username && (
               <p className="text-red-500 text-sm mt-1">{errors.username.message}</p>
-            )}
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium mb-1 text-white">
-              Stream Title
-            </label>
-            <input
-              type="text"
-              {...register('title')}
-              className="w-full bg-gray-700 text-white rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Stream title"
-            />
-            {errors.title && (
-              <p className="text-red-500 text-sm mt-1">{errors.title.message}</p>
-            )}
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium mb-1 text-white">
-              Thumbnail URL
-            </label>
-            <input
-              type="url"
-              {...register('thumbnailUrl')}
-              className="w-full bg-gray-700 text-white rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="https://example.com/thumbnail.jpg"
-            />
-            {errors.thumbnailUrl && (
-              <p className="text-red-500 text-sm mt-1">{errors.thumbnailUrl.message}</p>
             )}
           </div>
 

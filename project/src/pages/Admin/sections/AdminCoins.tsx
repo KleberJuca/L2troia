@@ -4,6 +4,7 @@ import { useCoinsManagement } from '../../../hooks/useCoinsManagement';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { coinSettingsSchema, CoinSettingsInput, Currency } from '../../../types/coins';
+import React from 'react';
 
 const currencies: Currency[] = ['USD', 'EUR', 'BRL'];
 const currencySymbols: Record<Currency, string> = {

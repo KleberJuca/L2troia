@@ -1,33 +1,62 @@
 import { Stream, StreamInput } from '../../types/stream';
+import { getStreamStatus } from '../twitch/api';
+import { streamHistoryService } from './streamHistoryService';
 
 // In-memory storage for demo purposes
 let streams: Stream[] = [
   {
     id: 1,
-    username: "ediandresonl2",
-    title: "L2 Troia - PvP & Siege Wars",
-    viewers: 245,
-    thumbnailUrl: "/images/stream-thumbnail.jpg",
+    username: "carolzinhasg",
     isLive: true,
-    addedAt: new Date().toISOString()
+    viewers: 245,
+    addedAt: new Date().toISOString(),
+    isBlocked: false
   }
 ];
 
 export const streamService = {
   getStreams: async (): Promise<Stream[]> => {
     await new Promise(resolve => setTimeout(resolve, 500));
-    return streams;
+    
+    // Update live status and viewers for each stream
+    const updatedStreams = await Promise.all(
+      streams.map(async (stream) => {
+        if (!stream.isBlocked) {
+          try {
+            const status = await getStreamStatus(stream.username);
+            return {
+              ...stream,
+              isLive: status.isLive,
+              viewers: status.viewers
+            };
+          } catch (error) {
+            console.error(`Failed to get status for ${stream.username}:`, error);
+          }
+        }
+        return stream;
+      })
+    );
+
+    return updatedStreams;
   },
 
-  addStream: async (stream: StreamInput): Promise<Stream> => {
+  addStream: async (input: StreamInput): Promise<Stream> => {
     await new Promise(resolve => setTimeout(resolve, 500));
+    
+    // Check if stream already exists
+    if (streams.some(s => s.username.toLowerCase() === input.username.toLowerCase())) {
+      throw new Error('Stream already exists');
+    }
+
     const newStream = {
-      ...stream,
       id: Math.max(...streams.map(s => s.id), 0) + 1,
-      viewers: 0,
+      username: input.username,
       isLive: false,
-      addedAt: new Date().toISOString()
+      viewers: 0,
+      addedAt: new Date().toISOString(),
+      isBlocked: false
     };
+
     streams = [...streams, newStream];
     return newStream;
   },
@@ -37,19 +66,39 @@ export const streamService = {
     streams = streams.filter(stream => stream.id !== id);
   },
 
-  updateStreamStatus: async (id: number, isLive: boolean): Promise<Stream> => {
+  toggleBlockStream: async (id: number): Promise<Stream> => {
     await new Promise(resolve => setTimeout(resolve, 500));
     const stream = streams.find(s => s.id === id);
     if (!stream) {
       throw new Error('Stream not found');
     }
-    
+
     const updatedStream = {
       ...stream,
-      isLive,
-      viewers: isLive ? Math.floor(Math.random() * 500) : 0
+      isBlocked: !stream.isBlocked
     };
-    
+
+    streams = streams.map(s => s.id === id ? updatedStream : s);
+    return updatedStream;
+  },
+
+  updateStream: async (id: number, username: string): Promise<Stream> => {
+    await new Promise(resolve => setTimeout(resolve, 500));
+    const stream = streams.find(s => s.id === id);
+    if (!stream) {
+      throw new Error('Stream not found');
+    }
+
+    // Check if username is already taken by another stream
+    if (streams.some(s => s.id !== id && s.username.toLowerCase() === username.toLowerCase())) {
+      throw new Error('Username already exists');
+    }
+
+    const updatedStream = {
+      ...stream,
+      username
+    };
+
     streams = streams.map(s => s.id === id ? updatedStream : s);
     return updatedStream;
   }

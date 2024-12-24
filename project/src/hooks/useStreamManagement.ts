@@ -49,15 +49,32 @@ export const useStreamManagement = () => {
     }
   };
 
-  const updateStreamStatus = async (id: number, isLive: boolean) => {
+  const toggleBlockStream = async (id: number) => {
     try {
       setLoading(true);
       setError(null);
-      const updatedStream = await streamService.updateStreamStatus(id, isLive);
-      setStreams(prev => prev.map(stream => stream.id === id ? updatedStream : stream));
-      return updatedStream;
+      const updatedStream = await streamService.toggleBlockStream(id);
+      setStreams(prev => prev.map(stream => 
+        stream.id === id ? updatedStream : stream
+      ));
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to update stream status');
+      setError(err instanceof Error ? err.message : 'Failed to toggle stream block status');
+      throw err;
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const updateStream = async (id: number, username: string) => {
+    try {
+      setLoading(true);
+      setError(null);
+      const updatedStream = await streamService.updateStream(id, username);
+      setStreams(prev => prev.map(stream => 
+        stream.id === id ? updatedStream : stream
+      ));
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to update stream');
       throw err;
     } finally {
       setLoading(false);
@@ -71,6 +88,7 @@ export const useStreamManagement = () => {
     loadStreams,
     addStream,
     removeStream,
-    updateStreamStatus
+    toggleBlockStream,
+    updateStream
   };
 };

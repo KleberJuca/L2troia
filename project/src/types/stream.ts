@@ -4,20 +4,16 @@ export interface Stream {
   id: number;
   username: string;
   title: string;
-  viewers: number;
-  thumbnailUrl: string;
   isLive: boolean;
+  viewers: number;
   addedAt: string;
+  isBlocked: boolean;
 }
 
 export const streamSchema = z.object({
   username: z.string()
     .min(3, "Username must be at least 3 characters")
-    .max(50, "Username cannot exceed 50 characters"),
-  title: z.string()
-    .min(3, "Title must be at least 3 characters")
-    .max(100, "Title cannot exceed 100 characters"),
-  thumbnailUrl: z.string().url("Must be a valid URL")
+    .max(50, "Username cannot exceed 50 characters")
 });
 
 export type StreamInput = z.infer<typeof streamSchema>;

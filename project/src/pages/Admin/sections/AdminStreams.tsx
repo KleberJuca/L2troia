@@ -1,43 +1,35 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
-import { PlusIcon } from '@heroicons/react/24/outline';
+import { PlusIcon, Pencil, Trash2, Lock, Unlock, History } from 'lucide-react';
 import { useStreamManagement } from '../../../hooks/useStreamManagement';
 import StreamModal from '../../../components/Admin/StreamModal';
-import { format } from 'date-fns';
+import StreamHistoryModal from '../../../components/Admin/StreamHistoryModal';
+import { Stream } from '../../../types/stream';
+import React from 'react';
 
 export default function AdminStreams() {
-  const { streams, loading, error, loadStreams, addStream, removeStream, updateStreamStatus } = useStreamManagement();
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [editingStream, setEditingStream] = useState<Stream | null>(null);
+  const [selectedStreamHistory, setSelectedStreamHistory] = useState<string | null>(null);
+  const { streams, loading, error, loadStreams, addStream, removeStream, toggleBlockStream, updateStream } = useStreamManagement();
 
   useEffect(() => {
     loadStreams();
   }, []);
 
-  const handleAddStream = async (data: any) => {
-    try {
+  const handleEdit = (stream: Stream) => {
+    setEditingStream(stream);
+    setIsModalOpen(true);
+  };
+
+  const handleSave = async (data: { username: string }) => {
+    if (editingStream) {
+      await updateStream(editingStream.id, data.username);
+    } else {
       await addStream(data);
-      setIsModalOpen(false);
-    } catch (error) {
-      console.error('Failed to add stream:', error);
     }
-  };
-
-  const handleRemoveStream = async (id: number) => {
-    if (confirm('Are you sure you want to remove this stream?')) {
-      try {
-        await removeStream(id);
-      } catch (error) {
-        console.error('Failed to remove stream:', error);
-      }
-    }
-  };
-
-  const handleToggleStatus = async (id: number, currentStatus: boolean) => {
-    try {
-      await updateStreamStatus(id, !currentStatus);
-    } catch (error) {
-      console.error('Failed to update stream status:', error);
-    }
+    setEditingStream(null);
+    setIsModalOpen(false);
   };
 
   if (loading) {
@@ -63,7 +55,7 @@ export default function AdminStreams() {
       className="space-y-6"
     >
       <div className="flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Stream Management</h1>
+        <h1 className="text-2xl font-bold">Streams Management</h1>
         <button
           onClick={() => setIsModalOpen(true)}
           className="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition"
@@ -101,23 +93,45 @@ export default function AdminStreams() {
                 </td>
                 <td className="px-6 py-4">{stream.viewers}</td>
                 <td className="px-6 py-4">
-                  {format(new Date(stream.addedAt), 'dd/MM/yyyy HH:mm')}
+                  {new Date(stream.addedAt).toLocaleString()}
                 </td>
                 <td className="px-6 py-4">
-                  <button
-                    onClick={() => handleToggleStatus(stream.id, stream.isLive)}
-                    className={`mr-4 ${
-                      stream.isLive ? 'text-red-400 hover:text-red-500' : 'text-green-400 hover:text-green-500'
-                    }`}
-                  >
-                    {stream.isLive ? 'Set Offline' : 'Set Live'}
-                  </button>
-                  <button
-                    onClick={() => handleRemoveStream(stream.id)}
-                    className="text-red-400 hover:text-red-500"
-                  >
-                    Remove
-                  </button>
+                  <div className="flex space-x-2">
+                    <button
+                      onClick={() => setSelectedStreamHistory(stream.username)}
+                      className="text-blue-400 hover:text-blue-500"
+                      title="View History"
+                    >
+                      <History className="h-5 w-5" />
+                    </button>
+                    <button
+                      onClick={() => handleEdit(stream)}
+                      className="text-blue-400 hover:text-blue-500"
+                      title="Edit"
+                    >
+                      <Pencil className="h-5 w-5" />
+                    </button>
+                    <button
+                      onClick={() => toggleBlockStream(stream.id)}
+                      className={`${
+                        stream.isBlocked ? 'text-red-400 hover:text-red-500' : 'text-green-400 hover:text-green-500'
+                      }`}
+                      title={stream.isBlocked ? 'Unblock' : 'Block'}
+                    >
+                      {stream.isBlocked ? (
+                        <Lock className="h-5 w-5" />
+                      ) : (
+                        <Unlock className="h-5 w-5" />
+                      )}
+                    </button>
+                    <button
+                      onClick={() => removeStream(stream.id)}
+                      className="text-red-400 hover:text-red-500"
+                      title="Remove"
+                    >
+                      <Trash2 className="h-5 w-5" />
+                    </button>
+                  </div>
                 </td>
               </tr>
             ))}
@@ -127,8 +141,19 @@ export default function AdminStreams() {
 
       {isModalOpen && (
         <StreamModal
-          onAdd={handleAddStream}
-          onClose={() => setIsModalOpen(false)}
+          stream={editingStream}
+          onAdd={handleSave}
+          onClose={() => {
+            setIsModalOpen(false);
+            setEditingStream(null);
+          }}
+        />
+      )}
+
+      {selectedStreamHistory && (
+        <StreamHistoryModal
+          username={selectedStreamHistory}
+          onClose={() => setSelectedStreamHistory(null)}
         />
       )}
     </motion.div>
