@@ -1,12 +1,13 @@
 import { Stream, StreamInput } from '../../types/stream';
 import { getStreamStatus } from '../twitch/api';
-import { streamHistoryService } from './streamHistoryService';
+//import { streamHistoryService } from './streamHistoryService';
 
 // In-memory storage for demo purposes
 let streams: Stream[] = [
   {
     id: 1,
     username: "carolzinhasg",
+    title: '' ,
     isLive: true,
     viewers: 245,
     addedAt: new Date().toISOString(),
@@ -27,7 +28,8 @@ export const streamService = {
             return {
               ...stream,
               isLive: status.isLive,
-              viewers: status.viewers
+              viewers: status.viewers,
+              title: status.title
             };
           } catch (error) {
             console.error(`Failed to get status for ${stream.username}:`, error);
@@ -51,6 +53,7 @@ export const streamService = {
     const newStream = {
       id: Math.max(...streams.map(s => s.id), 0) + 1,
       username: input.username,
+      title: '',
       isLive: false,
       viewers: 0,
       addedAt: new Date().toISOString(),

@@ -13,7 +13,7 @@ export default function TwitchStreams() {
       try {
         const data = await streamService.getStreams();
         // Filter out blocked streams and only show live ones
-        setStreams(data.filter(stream => !stream.isBlocked && stream.isLive));
+        setStreams(data.filter(stream => !stream.isBlocked && stream.isLive && stream.title.toLowerCase().includes('L2Troia')));
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Failed to load streams');
       } finally {

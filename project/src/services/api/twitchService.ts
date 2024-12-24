@@ -6,14 +6,6 @@ interface TwitchTokenResponse {
   expires_in: number;
 }
 
-interface TwitchStream {
-  user_login: string;
-  type: string;
-  viewer_count: number;
-  thumbnail_url: string;
-  title: string;
-}
-
 class TwitchService {
   private accessToken: string | null = null;
   private tokenExpiry: number | null = null;
